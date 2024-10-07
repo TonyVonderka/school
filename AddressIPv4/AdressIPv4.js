@@ -114,7 +114,6 @@ class AddressIPv4 {
   }
 }
 
-class Mask extends AddressIPv4 {}
 
 const ip1 = new AddressIPv4("192.168.1.1");
 
