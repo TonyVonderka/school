@@ -21,6 +21,6 @@ Robot Karel je webová simulace, kde můžeš ovládat robota (Karela) na mří�
 
 - `KROK 3`: Pohne Karlem o 3 kroky vpřed.
 - `VLEVOBOK 1`: Otočí Karla o 90 stupňů doleva.
-- `POLOZ Kamen`: Umístí "Kamen" na mřížku na aktuální pozici Karla.
+- `POLOZ A`: Umístí písmeno A na mřížku na aktuální pozici Karla.
 - `RESET`: Resetuje mřížku a pozici robota.
 
