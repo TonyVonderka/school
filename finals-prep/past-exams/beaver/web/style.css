@@ -1,0 +1,104 @@
+:root {
+  --dark-clr: oklch(12.9% 0.042 264.695);
+  --light-clr: oklch(96.8% 0.007 247.896);
+  --indigo-clr: oklch(45.7% 0.24 277.023);
+}
+
+/* --- CSS Reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: var(--dark-clr);
+  color: var(--light-clr);
+}
+
+img,
+video,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* --- Header --- */
+.header {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* --- Game board --- */
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.game__board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  gap: 3rem;
+}
+
+.game__hole {
+  background-color: var(--light-clr);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.game__beaver {
+  background-color: var(--indigo-clr);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.game__beaver--active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* --- Score --- */
+.game__score-text {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+
+.game__score-value {
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--indigo-clr);
+}
