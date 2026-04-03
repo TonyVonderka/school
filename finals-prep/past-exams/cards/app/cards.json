@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Ohnivý drak",
+    "category": "Legendární",
+    "level": 5
+  },
+  {
+    "name": "Ledový fénix",
+    "category": "Epická",
+    "level": 4
+  },
+  {
+    "name": "Kamenný golem",
+    "category": "Vzácná",
+    "level": 3
+  },
+  {
+    "name": "Stínový vlk",
+    "category": "Neobvyklá",
+    "level": 2
+  },
+  {
+    "name": "Lesní elf",
+    "category": "Běžná",
+    "level": 1
+  },
+  {
+    "name": "Temný rytíř",
+    "category": "Epická",
+    "level": 4
+  },
+  {
+    "name": "Vodní sliz",
+    "category": "Běžná",
+    "level": 1
+  }
+]

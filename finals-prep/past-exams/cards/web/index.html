@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karty</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Karty</h1>
+    </header>
+    <main class="game">
+      <h2 class="game__result" id="resultText">Vyber kartu!</h2>
+      <div class="game__board">
+        <div class="game__options">
+          <button class="game__card game__card--symbol" data-symbol="spade">
+            ♠️
+          </button>
+          <button class="game__card game__card--symbol" data-symbol="heart">
+            ♥️
+          </button>
+          <button class="game__card game__card--symbol" data-symbol="club">
+            ♣️
+          </button>
+        </div>
+        <div class="game__target">
+          <div class="game__card game__card--hidden"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

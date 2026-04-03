@@ -1,0 +1,98 @@
+:root {
+  --dark-clr: oklch(12.9% 0.042 264.695);
+  --light-clr: oklch(96.8% 0.007 247.896);
+  --indigo-clr: oklch(45.7% 0.24 277.023);
+  --green-clr: oklch(79.2% 0.209 151.711);
+  --red-clr: oklch(63.7% 0.237 25.331);
+}
+
+/* --- CSS Reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: var(--dark-clr);
+  color: var(--light-clr);
+}
+
+img,
+video,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* --- Header --- */
+.header__title {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* --- Game board --- */
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.game__board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.game__options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.game__card {
+  width: 150px;
+  height: 200px;
+  border: none;
+  border-radius: 20px;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__card--hidden {
+  background-color: var(--indigo-clr);
+  cursor: default;
+}
+
+.game__card:hover {
+  scale: 1.1;
+}
+
+.game__card--hidden:hover {
+  scale: 1;
+}
