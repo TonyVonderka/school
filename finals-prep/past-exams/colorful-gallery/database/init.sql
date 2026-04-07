@@ -66,7 +66,8 @@ VALUES ("šťastní maturanti", "maturanti zjišťují, že úspěšně splnili 
 
 -- 3. Úprava popisu u obrázků od 31. 8. 2024
 UPDATE obrazek
-SET popis = CONCAT(popis, '- aktualizováno' );
+SET popis = CONCAT(popis, '- aktualizováno')
+WHERE datum_nahrani >= '2024-08-31';
 
 -- 4. Výpis obrázků bez komentáře 
 SELECT nazev, datum_nahrani
