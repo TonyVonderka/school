@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="cs" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barevná galerie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Barevná galerie</h1>
+      <div class="header__theme">
+        <button data-theme-set="light" class="header__theme--btn">
+          Světlý motiv
+        </button>
+        <button data-theme-set="dark" class="header__theme--btn">
+          Tmavý motiv
+        </button>
+        <button data-theme-set="colorful" class="header__theme--btn">
+          Barevný motiv
+        </button>
+      </div>
+    </header>
+    <main class="gallery">
+      <article class="gallery__item">
+        <img src="https://picsum.photos/id/10/800/600" alt="" />
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit.</p>
+      </article>
+      <article class="gallery__item">
+        <img src="https://picsum.photos/id/11/800/600" alt="" />
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit.</p>
+      </article>
+      <article class="gallery__item">
+        <img src="https://picsum.photos/id/12/800/600" alt="" />
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit.</p>
+      </article>
+      <article class="gallery__item">
+        <img src="https://picsum.photos/id/13/800/600" alt="" />
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit.</p>
+      </article>
+      <article class="gallery__item">
+        <img src="https://picsum.photos/id/15/800/600" alt="" />
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit.</p>
+      </article>
+      <article class="gallery__item">
+        <img src="https://picsum.photos/id/17/800/600" alt="" />
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit.</p>
+      </article>
+    </main>
+
+    <div id="imageModal" class="modal">
+      <div class="modal-controls">
+        <button id="closeModal" class="close-btn">Zavřít</button>
+      </div>
+      <img alt="" class="modal-content" id="modalImage" />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
