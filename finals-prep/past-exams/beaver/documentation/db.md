@@ -25,7 +25,7 @@
 | -------------- | ----------- | ----- | --------------------------------- |
 | id_bobr        | INT         | PK    | UNSIGNED, AUTO_INCREMENT          |
 | jmeno          | VARCHAR(50) |       | NOT NULL                          |
-| id_nora        | INT         | FK    | NOT NULL                          |
+| id_nora        | INT         | FK    | UNSIGNED, NOT NULL                |
 
 ### Tabulka: krmeni
 
@@ -33,7 +33,7 @@
 | -------------- | ---------- | ----- | ----------------------------------- |
 | id_krmeni      | INT        | PK    | UNSIGNED, AUTO_INCREMENT            |
 | cas_krmeni     | DATETIME   |       | NOT NULL, DEFAULT CURRENT_TIMESTAMP |
-| id_bobr        | INT        | FK    | NOT NULL                            |
+| id_bobr        | INT        | FK    | UNSIGNED, NOT NULL                  |
 
 ## 3. SQL Scripty
 
