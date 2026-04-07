@@ -1,6 +1,6 @@
 # Program
 
-[`⬅️ Zpět na hlavní přehled (README.md)`](../README.md)
+[⬅️ Zpět na hlavní přehled](../README.md)
 
 ## Popis problematiky
 

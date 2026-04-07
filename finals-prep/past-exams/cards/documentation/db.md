@@ -1,6 +1,6 @@
 # Databáze
 
-[`⬅️ Zpět na hlavní přehled (README.md)`](../README.md)
+[⬅️ Zpět na hlavní přehled](../README.md)
 
 ## 1. Konceptuální návrh (E-R Diagram)
 
