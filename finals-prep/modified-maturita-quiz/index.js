@@ -141,6 +141,7 @@ function showQuestion() {
   Object.entries(q.answers).forEach(([key, text]) => {
     const btn = document.createElement("button");
     btn.className = "answer-btn";
+    btn.dataset.key = key;
     btn.textContent = `${key}: ${text}`;
     btn.onclick = () => handleAnswer(key, btn);
     answersContainer.appendChild(btn);
@@ -152,10 +153,14 @@ function handleAnswer(selectedKey, btn) {
   const isCorrect = selectedKey === q.correct;
   const feedback = document.getElementById("feedback");
 
-  Array.from(answersContainer.children).forEach((b) => (b.disabled = true));
+  Array.from(answersContainer.children).forEach((b) => {
+    b.disabled = true;
+    if (b.dataset.key === q.correct) {
+      b.classList.add("correct");
+    }
+  });
 
   if (isCorrect) {
-    btn.classList.add("correct");
     feedback.textContent = "Výborně! Správná odpověď.";
     feedback.className = "success";
     score++;
