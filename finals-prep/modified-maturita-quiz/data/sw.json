@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je kernel operačního systému?",
+    "answers": {
+      "A": "Jádro systému řídící hardware a systémové prostředky",
+      "B": "Grafické uživatelské rozhraní Unix-like systému",
+      "C": "Aplikační software pro práci se souborovým systémem daného OS",
+      "D": "Textový editor s režimy pro řízení a editaci podobný editoru vim",
+      "E": "Síťový rozhraní umožňující kominukaci OS v sítí Kernal Ethernet"
+    },
+    "correct": "A",
+    "explanation": "Kernel (jádro) je nejnižší a nejdůležitější softwarová vrstva OS. Funguje jako most, který překládá požadavky z aplikací do instrukcí pro fyzický hardware (procesor, paměť)."
+  },
+  {
+    "id": 2,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je bootloader?",
+    "answers": {
+      "A": "Program pro správu uživatelů Unix-like operačního systému",
+      "B": "Program načítající jádro operačního systému při startu",
+      "C": "Program pro zálohování dat na lokální paměťové médium nebo do cloudového úložiště",
+      "D": "Program pro správu síťových prostředků",
+      "E": "Program pro šifrování dat na paměťových médiích"
+    },
+    "correct": "B",
+    "explanation": "Bootloader (zavaděč) je malý program (např. GRUB u Linuxu), který se spustí hned po zapnutí počítače (po BIOSu/UEFI) a jeho jediným úkolem je najít a nastartovat operační systém."
+  },
+  {
+    "id": 3,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co znamená multitasking?",
+    "answers": {
+      "A": "Schopnost ukládat data na libovolné datové úložiště",
+      "B": "Schopnost spustit jeden program současně",
+      "C": "Schopnost operačního systému spouštět více procesů současně",
+      "D": "Schopnost posílat úlohy (task) více zařízením najednou",
+      "E": "Schopnost zálohovat data na paměťových médiích"
+    },
+    "correct": "C",
+    "explanation": "Multitasking umožňuje počítači zdánlivě dělat více věcí najednou (např. hrát hudbu, stahovat soubor a mít otevřený prohlížeč) tím, že rychle přepíná pozornost procesoru mezi aplikacemi."
+  },
+  {
+    "id": 4,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je preemptivní multitasking?",
+    "answers": {
+      "A": "Procesy si předávají čas CPU dobrovolně",
+      "B": "Běží pouze jeden proces v reálném čase",
+      "C": "Neprobíhá žádné koordinované využití CPU jednotlivými procesy",
+      "D": "OS přerušuje procesy a přiděluje CPU podle plánovače",
+      "E": "Systémové řízení procesu probíhá střídavě podle abecedy"
+    },
+    "correct": "D",
+    "explanation": "Při preemptivním multitaskingu má operační systém absolutní moc. Sám tvrdě přeruší běžící program a přidělí procesor jinému, takže se nestane, že by jeden zaseknutý program shodil celé PC."
+  },
+  {
+    "id": 5,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je kooperativní multitasking?",
+    "answers": {
+      "A": "Systémové řízení procesu probíhá střídavě podle abecedy",
+      "B": "OS přerušuje procesy a přiděluje CPU podle plánovače",
+      "C": "Běží pouze jeden proces v reálném čase",
+      "D": "Neprobíhá žádné koordinované využití CPU jednotlivými procesy",
+      "E": "Procesy se samy vzdávají CPU ve prospěch jiných"
+    },
+    "correct": "E",
+    "explanation": "Historický přístup (např. staré Windows 95), kdy systém spoléhal, že program bude slušný a sám od sebe občas procesor uvolní pro ostatní. Když program zamrzl, zamrzlo celé PC."
+  },
+  {
+    "id": 6,
+    "topic": "Virtualization",
+    "difficulty": "medium",
+    "question": "Co je virtualizace?",
+    "answers": {
+      "A": "Spuštění více virtuálních systémů na jednom fyzickém stroji",
+      "B": "Příprava a používání lokálního development webového serveru",
+      "C": "Zrcadlení dat na discích tak, aby v případě poškození jednoho z disků nedošlo ke ztrátě dat",
+      "D": "OS přerušuje procesy a přiděluje CPU podle plánovače",
+      "E": "Nastavení GUI operačního systému dle potřeby uživatele"
+    },
+    "correct": "A",
+    "explanation": "Virtualizace umožňuje na jednom fyzickém serveru spustit více izolovaných 'virtuálních' počítačů (tzv. virtuálních strojů), každý s vlastním operačním systémem."
+  },
+  {
+    "id": 7,
+    "topic": "Virtualization",
+    "difficulty": "medium",
+    "question": "Co je hypervisor?",
+    "answers": {
+      "A": "Textový procesor podporující nativní formát hyper",
+      "B": "Vrstva umožňující běh virtuálních strojů",
+      "C": "Bezespojový síťový protokol umožňující rychlý přenost dat",
+      "D": "Databázový server založený na relačním datovém modelu",
+      "E": "Služba antivirového programu provádějící hypervisi"
+    },
+    "correct": "B",
+    "explanation": "Hypervisor (např. VMware, Hyper-V, VirtualBox) je speciální software, který přiděluje fyzický hardware (RAM, CPU) jednotlivým virtuálním strojům a izoluje je od sebe."
+  },
+  {
+    "id": 8,
+    "topic": "Linux",
+    "difficulty": "medium",
+    "question": "Co dělá příkaz cd v Linux shellu?",
+    "answers": {
+      "A": "Zobrazí obsah aktuálního adresáře",
+      "B": "Smaže soubor nebo adresář",
+      "C": "Změní aktuální pracovní adresář",
+      "D": "Kopíruje soubor nebo adresář",
+      "E": "Přejmenuje soubor nebo adresář"
+    },
+    "correct": "C",
+    "explanation": "Zkratka pro 'Change Directory'. Slouží k pohybu ve složkách v příkazovém řádku (terminálu)."
+  },
+  {
+    "id": 9,
+    "topic": "Linux",
+    "difficulty": "medium",
+    "question": "Co dělá příkaz ls v Linux shellu?",
+    "answers": {
+      "A": "Změní název adresáře",
+      "B": "Smaže soubor nebo adresář",
+      "C": "Kopíruje soubor nebo adresář",
+      "D": "Zobrazí obsah adresáře",
+      "E": "Přejmenuje soubor nebo adresář"
+    },
+    "correct": "D",
+    "explanation": "Zkratka pro 'List'. Vypíše všechny soubory a složky, které se nacházejí v aktuálním adresáři."
+  },
+  {
+    "id": 10,
+    "topic": "Linux",
+    "difficulty": "medium",
+    "question": "Co dělá příkaz cp v linux shellu?",
+    "answers": {
+      "A": "Přesune soubor ",
+      "B": "Smaže soubor ",
+      "C": "Zobrazí obsah ",
+      "D": "Vytvoří adresář ",
+      "E": "Kopíruje soubory nebo adresáře "
+    },
+    "correct": "E",
+    "explanation": "Zkratka pro 'Copy'. Používá se k vytváření kopií souborů nebo složek."
+  },
+  {
+    "id": 11,
+    "topic": "Linux",
+    "difficulty": "medium",
+    "question": "Co dělá příkaz mv v Linux shellu?",
+    "answers": {
+      "A": "Přesune nebo přejmenuje soubor",
+      "B": "Kopíruje soubor nebo adresář",
+      "C": "Smaže soubor nebo adresář",
+      "D": "Zobrazí obsah souboru",
+      "E": "Přejmenuje soubor nebo adresář"
+    },
+    "correct": "A",
+    "explanation": "Zkratka pro 'Move'. V Linuxu se stejný příkaz používá pro přesunutí souboru do jiné složky i pro jeho obyčejné přejmenování."
+  },
+  {
+    "id": 12,
+    "topic": "Linux",
+    "difficulty": "medium",
+    "question": "Co dělá příkaz rm v Linux shellu?",
+    "answers": {
+      "A": "Kopíruje soubor ",
+      "B": "Odstraní soubor nebo adresář ",
+      "C": "Přesune soubor ",
+      "D": "Zobrazí obsah ",
+      "E": "Vytvoří soubor "
+    },
+    "correct": "B",
+    "explanation": "Zkratka pro 'Remove'. Nenávratně maže soubory (ne přes Koš, ale rovnou pryč)."
+  },
+  {
+    "id": 13,
+    "topic": "Encoding",
+    "difficulty": "medium",
+    "question": "Co je Unicode?",
+    "answers": {
+      "A": "Šifrovací algoritmus ",
+      "B": "Databázový formát ",
+      "C": "Standard pro reprezentaci znaků všech jazyků",
+      "D": "Síťový protokol ",
+      "E": "Programovací jazyk "
+    },
+    "correct": "C",
+    "explanation": "Dříve měly státy vlastní kódování (takže česká diakritika se jinde zobrazila jako rosypaný čaj). Unicode je celosvětová tabulka, která má přiřazené unikátní číslo pro každý znak na světě (včetně emoji)."
+  },
+  {
+    "id": 14,
+    "topic": "Encoding",
+    "difficulty": "medium",
+    "question": "Co je UTF-8?",
+    "answers": {
+      "A": "Pevné 1 bajtové kódování ",
+      "B": "Šifrovací metoda pro šifrování dat v souborech",
+      "C": "Bezeztrátová komprese dat",
+      "D": "Kódování znaků s proměnnou délkou 1 až 4 bajty",
+      "E": "Síťový komunikační protokol"
+    },
+    "correct": "D",
+    "explanation": "Nejpoužívanější způsob uložení Unicode znaků na internetu. Aby to nezabíralo moc místa, běžné anglické znaky uloží jen do 1 bajtu a např. českou diakritiku nebo asijské znaky do 2 až 4 bajtů."
+  },
+  {
+    "id": 15,
+    "topic": "Encoding",
+    "difficulty": "medium",
+    "question": "Co znamená little endian?",
+    "answers": {
+      "A": "Nejvýznamnější bajt kódováneho znaku je uložen jako první",
+      "B": "Náhodné pořadí bajtů v daném kódování",
+      "C": "Základní tabulka obsahující kódy znaků (unicode)",
+      "D": "Algoritmus bezeztrátové komprese dat",
+      "E": "Nejméně významný bajt kódovaného znaku je uložen jako první"
+    },
+    "correct": "E",
+    "explanation": "Jde o způsob, jak procesor čte vícebajtová čísla v paměti. V 'Little Endian' je ten nejmenší (nejméně významný) kousek dat na nejnižší adrese paměti (čte se 'odzadu')."
+  },
+  {
+    "id": 16,
+    "topic": "Encoding",
+    "difficulty": "medium",
+    "question": "Co je BOM?",
+    "answers": {
+      "A": "Značka určující kódování a endianitu souboru",
+      "B": "Program pro čtení souborů Binary Only Method",
+      "C": "Typ šifry dat v textových souborech",
+      "D": "Typ komprese dat v binárních souborech",
+      "E": "Speciální síťový paket pro zahájení TCP spojení"
+    },
+    "correct": "A",
+    "explanation": "Byte Order Mark jsou neviditelné byty na úplném začátku textového souboru, které programu říkají: 'Pozor, tento soubor je v kódování UTF-8 (nebo UTF-16)'."
+  },
+  {
+    "id": 17,
+    "topic": "Encoding",
+    "difficulty": "medium",
+    "question": "Co je CRC?",
+    "answers": {
+      "A": "Symetrický transpoziční šifrovací algoritmus",
+      "B": "Kontrolní součet pro detekci chyb v datech",
+      "C": "Heshovací funkce pro hashování hesel",
+      "D": "DML SQL dotaz nad databází selekci záznamů",
+      "E": "Programovací jazyk pro programování CRC strojů"
+    },
+    "correct": "B",
+    "explanation": "Cyclic Redundancy Check se počítá ze všech odesílaných dat. Příjemce ho spočítá znovu, a pokud se CRC shoduje, ví, že se data po cestě nijak nepoškodila."
+  },
+  {
+    "id": 18,
+    "topic": "Encoding",
+    "difficulty": "medium",
+    "question": "Co je paritní bit?",
+    "answers": {
+      "A": "Bit pro velikost souboru ",
+      "B": "Bit určující znaménko čísla ve dvojkovém doplňkovém kódu ",
+      "C": "Bit pro kontrolu správnosti přenosu dat",
+      "D": "První bit IP adresy masky sítě",
+      "E": "Rodičovská vlastnost abstraktní třídy Bit"
+    },
+    "correct": "C",
+    "explanation": "Nejjednodušší forma kontroly chyb. K osmi bitům se přidá jeden navíc (paritní). Ten zajistí, aby byl součet jedniček vždy sudý (nebo lichý). Pokud se po cestě bit otočí, parita nebude sedět."
+  },
+  {
+    "id": 19,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je malware?",
+    "answers": {
+      "A": "Optimalizační program ",
+      "B": "Nástroj pro zálohování dat na datovém médiu",
+      "C": "Malý textový editor bez podpory formátování textu",
+      "D": "Škodlivý software určený k narušení systému",
+      "E": "Jiné označení pro databázový server"
+    },
+    "correct": "D",
+    "explanation": "Malicious Software (Malware) je obecný zastřešující pojem pro VŠECHNY typy škodlivých kódů (viry, červi, ransomware, trojské koně)."
+  },
+  {
+    "id": 20,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je virus?",
+    "answers": {
+      "A": "Antivirus zajišťující ochranu před malwarem",
+      "B": "Zálohovací program",
+      "C": "Synonymum pro malware - červ",
+      "D": "Spyware",
+      "E": "Malware šířící se připojením k jiným souborům"
+    },
+    "correct": "E",
+    "explanation": "Počítačový virus se chová jako biologický virus – sám o sobě nefunguje, musí se 'přilepit' (infikovat) k nějakému legitimnímu programu (např. do .exe souboru hry), aby se šířil."
+  },
+  {
+    "id": 21,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je červ?",
+    "answers": {
+      "A": "Malware šířící se autonomně po síti",
+      "B": "Antivirus zajišťující ochranu před malwarem",
+      "C": "Zálohovací program",
+      "D": "Malware šířící se připojením k jiným souborům",
+      "E": "Kompilátor jazyka C"
+    },
+    "correct": "A",
+    "explanation": "Na rozdíl od viru červ nepotřebuje hostitele (jiný soubor) ani zásah uživatele. Je to samostatný program, který se aktivně a automaticky kopíruje a šíří dál do sítě na zranitelná PC."
+  },
+  {
+    "id": 22,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je trojský kůň?",
+    "answers": {
+      "A": "Antivirus zajišťující ochranu před malwarem",
+      "B": "Program tvářící se legitimně, ale obsahující škodlivý kód",
+      "C": "Software zabezpečující systém před Spyware",
+      "D": "Protokol umožňující komunikaci mezi dvěma koncovými uzly",
+      "E": "Jiné označení pro ransomware"
+    },
+    "correct": "B",
+    "explanation": "Tváří se jako užitečný program (např. 'Zrychlení PC zdarma'), ty si ho sám dobrovolně nainstaluješ, ale na pozadí otevře útočníkovi zadní vrátka do tvého PC."
+  },
+  {
+    "id": 23,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je ransomware?",
+    "answers": {
+      "A": "Software zabezpečující systém před Spyware",
+      "B": "Antivirus zajišťující ochranu před malwarem",
+      "C": "Malware šifrující data a požadující výkupné",
+      "D": "Protokol umožňující komunikaci mezi dvěma koncovými uzly",
+      "E": "Nástroj pro zálohování dat na datovém médiu"
+    },
+    "correct": "C",
+    "explanation": "Ransom (výkupné). Tento zákeřný vir zablokuje nebo zašifruje všechny tvé fotky a dokumenty a ukáže hlášku, ať pošleš peníze v Bitcoinech, jinak o data přijdeš."
+  },
+  {
+    "id": 24,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je spyware?",
+    "answers": {
+      "A": "Malware šifrující data a požadující výkupné",
+      "B": "Systém filtrující síťový provoz podle pravidel",
+      "C": "Šifrované spojení přes veřejnou síť",
+      "D": "Software sledující aktivitu uživatele bez jeho vědomí",
+      "E": "Kompilátor jazyka SPY"
+    },
+    "correct": "D",
+    "explanation": "Spy (špion). Tento program tě tiše sleduje – čte, co píšeš na klávesnici (keylogger), zaznamenává historii z prohlížeče a posílá ji útočníkovi."
+  },
+  {
+    "id": 25,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je firewall?",
+    "answers": {
+      "A": "Systém kontrolující konzistenci dat v databázi",
+      "B": "Antivirus zajišťující ochranu před malwarem",
+      "C": "Obezné označení pro poškozený operační systém",
+      "D": "Zeď zajišťující fyzickou ochranu před vstupem do serverovny",
+      "E": "Systém filtrující síťový provoz podle pravidel"
+    },
+    "correct": "E",
+    "explanation": "Firewall ('protipožární zeď') stojí na pomezí tvé sítě a internetu. Kontroluje veškerá data (pakety), co jdou dovnitř a ven, a podle nastavených pravidel propouští jen ty bezpečné."
+  },
+  {
+    "id": 26,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je VPN?",
+    "answers": {
+      "A": "Virtual Private Network - šifrované spojení přes veřejnou síť",
+      "B": "Virtual Printing Network - virtuální tiskový server",
+      "C": "Verified Private Node - verifikovaný privátní uzel sítě",
+      "D": "Verfied Proxy Network - verifikovaná proxy síť",
+      "E": "Virtual Packet Network - virtuální paketová síť"
+    },
+    "correct": "A",
+    "explanation": "VPN vytvoří zabezpečený 'tunel' skrze nebezpečný internet. I když jsi na veřejné Wi-Fi, tvoje data nelze po cestě odposlechnout, protože jsou zašifrovaná."
+  },
+  {
+    "id": 27,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je phishing?",
+    "answers": {
+      "A": "Šifrovaný přenos citlivých dat",
+      "B": "Podvodné získávání citlivých údajů ",
+      "C": "Ověřený bezpečný přístup k účtu",
+      "D": "Detekce nebezpečných síťových útoků",
+      "E": "Zabezpečená komunikace mezi servery"
+    },
+    "correct": "B",
+    "explanation": "Phishing (rubaření). Útočník pošle podvodný e-mail (např. od 'tvé banky'), který tě vyláká na falešnou stránku, abys tam zadal své přihlašovací jméno a heslo."
+  },
+  {
+    "id": 28,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je brute force útok?",
+    "answers": {
+      "A": "Automatická detekce slabých hesel",
+      "B": "Bezpečné generování přístupových klíčů",
+      "C": "Zkoušení všech kombinací hesel ",
+      "D": "Ochrana proti neoprávněnému přístupu",
+      "E": "Filtrování neplatných přihlašovacích pokusů"
+    },
+    "correct": "C",
+    "explanation": "Útok hrubou silou. Počítačový program postupně zkouší každé myslitelné heslo (aaaa, aaab, aaac...), dokud se náhodou nestrefí. Funguje jen na slabá a krátká hesla."
+  },
+  {
+    "id": 29,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je SQL Injection?",
+    "answers": {
+      "A": "Optimalizace výkonu databázových dotazů",
+      "B": "Šifrování databázové komunikace",
+      "C": "Automatické zálohování databázových dat",
+      "D": "Vložení škodlivého SQL kódu do vstupu aplikace",
+      "E": "Monitoring výkonu databázového serveru"
+    },
+    "correct": "D",
+    "explanation": "Pokud programátor webu dostatečně neošetří to, co píšeš do vyhledávání, můžeš místo hledaného slova napsat databázový příkaz a donutit web vypsat cizí hesla nebo smazat databázi."
+  },
+  {
+    "id": 30,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je XSS?",
+    "answers": {
+      "A": "Optimalizace vykreslování webových stránek",
+      "B": "Filtrování neplatných vstupních dat",
+      "C": "Validace formulářových dat uživatele",
+      "D": "Správa uživatelských relací systému",
+      "E": "Vložení škodlivého skriptu do webové stránky"
+    },
+    "correct": "E",
+    "explanation": "Cross-Site Scripting. Útočník vloží do komentářů na webu cizí JavaScript. Když si pak tento web otevřeš ty, škodlivý kód se spustí ve tvém prohlížeči."
+  },
+  {
+    "id": 31,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je DoS?",
+    "answers": {
+      "A": "Zahlcení služby požadavky z jednoho zdroje",
+      "B": "Řízení dostupnosti serverových služeb",
+      "C": "Náhodné poškození síťových paketů",
+      "D": "Samovolné přerušování aktivních spojení",
+      "E": "Deformace přenášených dat v síti"
+    },
+    "correct": "A",
+    "explanation": "Denial of Service. Jeden počítač posílá cílovému serveru obrovské množství nesmyslných požadavků, dokud serveru nedojde výkon a nepřestane fungovat pro ostatní uživatele."
+  },
+  {
+    "id": 32,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je DDoS?",
+    "answers": {
+      "A": "Rozpad komunikace mezi více servery",
+      "B": "Záměrné zahlcení služby z více zdrojů",
+      "C": "Samovolné výpadky napříč systémy",
+      "D": "Náhodné blokování více síťových cest",
+      "E": "Nekontrolované zahlcování vlastních zařízení"
+    },
+    "correct": "B",
+    "explanation": "Distributed DoS. Útočník nakazí tisíce cizích počítačů po světě (botnet) a všechny je naráz namíří proti jednomu serveru. Obrana proti takové mase z více zdrojů je velmi složitá."
+  },
+  {
+    "id": 33,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je MFA?",
+    "answers": {
+      "A": "Opakované zamítání přihlašovacích pokusů",
+      "B": "Centralizace správy uživatelských identit",
+      "C": "Ověření pomocí více nezávislých faktorů",
+      "D": "Automatické sdílení přihlašovacích údajů",
+      "E": "Vypnutí více úrovní zabezpečení"
+    },
+    "correct": "C",
+    "explanation": "Multi-Factor Authentication (např. dvoufázové ověření). K přihlášení nestačí jen heslo (co znáš), ale i další faktor, např. SMS kód na tvůj telefon (co máš), nebo otisk prstu (co jsi)."
+  },
+  {
+    "id": 34,
+    "topic": "Security",
+    "difficulty": "medium",
+    "question": "Co je hashovací funkce?",
+    "answers": {
+      "A": "Bezpečné šifrování citlivých dat",
+      "B": "Ochrana komunikace mezi systémy",
+      "C": "Optimalizace ukládání databázových dat",
+      "D": "Funkce převádějící data na pevně dlouhý otisk",
+      "E": "Efektivní komprese velkých souborů"
+    },
+    "correct": "D",
+    "explanation": "Hash je matematická mlýnek na maso. Ať dovnitř hodíš slovo nebo celou knihu, vypadne vždy stejně dlouhý řetězec znaků. Z hashe navíc nelze původní slovo poskládat zpět (slouží pro bezpečné uložení hesel)."
+  },
+  {
+    "id": 35,
+    "topic": "Internet",
+    "difficulty": "medium",
+    "question": "Co je HTTP?",
+    "answers": {
+      "A": "Protokol pro bezpečné šifrování webové komunikace",
+      "B": "Optimalizace přenosu multimediálního obsahu",
+      "C": "Správa uživatelských relací na serveru",
+      "D": "Distribuce obsahu mezi servery CDN",
+      "E": "Protokol pro přenos webových stránek bez šifrování"
+    },
+    "correct": "E",
+    "explanation": "Základní protokol (jazyk), přes který komunikuje tvůj prohlížeč se serverem. Přenáší data v čistém textu, takže ho po cestě může kdokoli přečíst."
+  },
+  {
+    "id": 36,
+    "topic": "Internet",
+    "difficulty": "medium",
+    "question": "Co je HTTPS?",
+    "answers": {
+      "A": "Šifrovaná verze HTTP využívající TLS",
+      "B": "Správa uživatelských relací serveru",
+      "C": "Efektivní cachování webových stránek",
+      "D": "Komprese dat při přenosu webu",
+      "E": "Zvýšení dostupnosti webových služeb"
+    },
+    "correct": "A",
+    "explanation": "Zabezpečený HTTP. Data mezi tvým prohlížečem (např. heslo do banky) a serverem se cestou složitě zašifrují, aby je hackeři na síti nepřečetli."
+  },
+  {
+    "id": 37,
+    "topic": "Internet",
+    "difficulty": "medium",
+    "question": "Co je FTP?",
+    "answers": {
+      "A": "Full Traffic Protocol - protokol pro plné využití sítě",
+      "B": "File Transfer Protocol - protokol pro přenos souborů",
+      "C": "Fast Transfer Process - proces rychlého přenosu dat",
+      "D": "File Tracking Protocol - protokol pro tracking souborů",
+      "E": "Fast Transfer Protocol - protkol pro rychlý přenos souborů"
+    },
+    "correct": "B",
+    "explanation": "Zastaralý, ale stále používaný protokol primárně určený k přesouvání velkých souborů mezi tvým počítačem a vzdáleným serverem (např. když nahraješ webovky na hosting)."
+  },
+  {
+    "id": 38,
+    "topic": "Internet",
+    "difficulty": "medium",
+    "question": "Co je IP adresa?",
+    "answers": {
+      "A": "Identifikátor uživatelského účtu v systému",
+      "B": "Náhodně generované číslo připojení",
+      "C": "Jedinečný identifikátor zařízení v síti",
+      "D": "Blokovací identifikátor síťového zařízení",
+      "E": "Záznam o aktivitě zařízení v síti"
+    },
+    "correct": "C",
+    "explanation": "Jako domovní adresa. Aby internet věděl, kam ti má poslat YouTube video, musí mít tvůj počítač (nebo router) přiřazeno toto unikátní identifikační číslo."
+  },
+  {
+    "id": 39,
+    "topic": "Internet",
+    "difficulty": "medium",
+    "question": "Co je ISP?",
+    "answers": {
+      "A": "Interní správce počítačového systému",
+      "B": "Centrální kontrola internetového provozu",
+      "C": "Omezovač rychlosti internetového připojení",
+      "D": "Poskytovatel připojení k internetu ",
+      "E": "Systém pro filtrování síťového obsahu"
+    },
+    "correct": "D",
+    "explanation": "Internet Service Provider. Je to firma (O2, Vodafone, lokální wifíkáři), které platíš měsíčně peníze, aby ti zavedla internet do bytu."
+  },
+  {
+    "id": 40,
+    "topic": "Internet",
+    "difficulty": "medium",
+    "question": "Co je hosting?",
+    "answers": {
+      "A": "Optimalizace výkonu webových aplikací",
+      "B": "Komprese dat při přenosu webu",
+      "C": "Zvýšení dostupnosti online služeb",
+      "D": "Automatická správa databázových systémů",
+      "E": "Služba poskytující prostor pro webové stránky"
+    },
+    "correct": "E",
+    "explanation": "Abys nemusel mít svůj počítač s webovými stránkami zapnutý 24/7, zaplatíš si 'hosting' – pronajmeš si kousek místa na velkém, pořád běžícím serveru v datacentru."
+  },
+  {
+    "id": 41,
+    "topic": "Law",
+    "difficulty": "medium",
+    "question": "Co je GDPR?",
+    "answers": {
+      "A": "Nařízení EU o ochraně osobních údajů",
+      "B": "Systém sledování uživatelů internetu",
+      "C": "Nástroj pro blokování přístupu k datům",
+      "D": "Omezení sdílení informací mezi firmami",
+      "E": "Zákaz ukládání dat na serverech"
+    },
+    "correct": "A",
+    "explanation": "General Data Protection Regulation. Zákon z roku 2018 určující pravidla pro weby a firmy, jak smí (a nesmí) nakládat s tvým e-mailem, jménem nebo IP adresou."
+  },
+  {
+    "id": 42,
+    "topic": "Law",
+    "difficulty": "medium",
+    "question": "Co je NÚKIB?",
+    "answers": {
+      "A": "Centrum vývoje bezpečnostního softwaru",
+      "B": "Úřad pro kybernetickou bezpečnost v ČR",
+      "C": "Národní platforma pro sdílení dat",
+      "D": "Platforma pro testování kybernetických systémů",
+      "E": "Centrální správa digitálních identit"
+    },
+    "correct": "B",
+    "explanation": "Národní úřad pro kybernetickou a informační bezpečnost je státní orgán řešící bezpečnost kritické infrastruktury a hackerské útoky na stát."
+  },
+  {
+    "id": 43,
+    "topic": "SW",
+    "difficulty": "medium",
+    "question": "Co je to systémový software?",
+    "answers": {
+      "A": "Software, který je navržen pro konkrétní úkoly, například pro kancelářskou práci",
+      "B": "Software určený pro zábavu, například videohry.",
+      "C": "Software, který spravuje hardware počítače a poskytuje platformu pro běh aplikačního software.",
+      "D": "Software pro analýzu dat a grafiku.",
+      "E": "Software pro vývoj aplikací."
+    },
+    "correct": "C",
+    "explanation": "Rozlišujeme dvě větve. Aplikační software ty sám spouštíš k určité činnosti (Word, hry). Systémový software udržuje PC v chodu na pozadí (operační systém Windows, ovladače)."
+  },
+  {
+    "id": 44,
+    "topic": "Linux",
+    "difficulty": "medium",
+    "question": "Který z následujících příkazů v Bash v Linux-like systémech zajistí běh procesu na pozadí?",
+    "answers": {
+      "A": "process",
+      "B": "process > bg",
+      "C": "process | background",
+      "D": "process &",
+      "E": "process &&"
+    },
+    "correct": "D",
+    "explanation": "Znak '&' za příkazem řekne Linuxu: 'Spusť to, ale ihned mi vrať kontrolu nad terminálem, ať můžu psát další příkazy'."
+  },
+  {
+    "id": 45,
+    "topic": "SCHEMA",
+    "difficulty": "medium",
+    "question": "Co je hlavním rozdílem mezi von Neumannovým schématem a Harwardským schématem?",
+    "answers": {
+      "A": "Harwardské schéma je starší než von Neumannovo schéma.",
+      "B": "Von Neumannovo schéma používá více procesorů než Harwardské schéma.",
+      "C": "Harwardské schéma je používáno pouze pro grafické aplikace.",
+      "D": "Von Neumannovo schéma používá oddělené paměti, zatímco Harwardské schéma používájednu paměť pro data i instrukce. ",
+      "E": "Von Neumannovo schéma používá jednu paměť pro data i instrukce, zatímco Harwardské schéma používá oddělené paměti. "
+    },
+    "correct": "E",
+    "explanation": "Základní princip! Ve von Neumannově architektuře je programový kód naházený v paměti společně s daty. U Harwardu má CPU dvě samostatné paměti: jednu jen pro kód a druhou pro proměnná data."
+  },
+  {
+    "id": 46,
+    "topic": "DEV",
+    "difficulty": "medium",
+    "question": "Který z následujících software je považován za IDE (Integrated Development Environment)?",
+    "answers": {
+      "A": "Antigravity",
+      "B": "Notepad",
+      "C": "bash",
+      "D": "PowerShell",
+      "E": "BIOS"
+    },
+    "correct": "A",
+    "explanation": "V této dost zvláštně postavené otázce zní jediná možná odpověď A. Výraz 'Antigravity' odkazuje na komiksový vtip Python vývojářů nebo vývojářské frameworky."
+  },
+  {
+    "id": 47,
+    "topic": "DEV",
+    "difficulty": "medium",
+    "question": "Co je DevOps?",
+    "answers": {
+      "A": "Metodika vývoje softwaru zaměřená pouze na psaní kódu",
+      "B": "Přístup propojující vývoj a provoz s cílem zefektivnit dodávku softwaru",
+      "C": "Nástroj pro správu databází v cloudovém prostředí",
+      "D": "Programovací jazyk používaný pro automatizaci serverů",
+      "E": "Typ operačního systému určený pro správu počítačových sítí"
+    },
+    "correct": "B",
+    "explanation": "DevOps = Development + Operations. Místo toho, aby programátoři hodili kód správcům sítě a řekli 'starejte se', všichni spolupracují. Pomocí automatizace doručují nové funkce plynule."
+  },
+  {
+    "id": 48,
+    "topic": "SW",
+    "difficulty": "medium",
+    "question": "Co je Apache?",
+    "answers": {
+      "A": "Databázový server pro ukládání a správu dat",
+      "B": "Programovací jazyk pro tvorbu webových aplikací",
+      "C": "Webový server pro poskytování webových stránek",
+      "D": "Operační systém založený na jádře Linux",
+      "E": "Nástroj pro správu verzí zdrojového kódu"
+    },
+    "correct": "C",
+    "explanation": "Jeden z historicky nejpoužívanějších softwarů na světě pro tvorbu webových serverů. Reaguje na HTTP požadavky z prohlížečů a vrací zpět hotové HTML stránky."
+  },
+  {
+    "id": 49,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Který z následujících operačních systémů nemá linuxové jádro?",
+    "answers": {
+      "A": "Ubuntu",
+      "B": "Fedora",
+      "C": "Android",
+      "D": "Windows",
+      "E": "MacOS"
+    },
+    "correct": "D",
+    "explanation": "Ubuntu, Fedora i Android běží přímo na modifikovaném Linuxovém jádru. Systém od Apple (MacOS) využívá jádro z rodiny UNIX. Jediný absolutně odlišný a komerční systém je Windows se svým jádrem NT."
+  },
+  {
+    "id": 50,
+    "topic": "DEV",
+    "difficulty": "medium",
+    "question": "Který z uvedených jazyků není kompilovaný?",
+    "answers": {
+      "A": "C",
+      "B": "C++",
+      "C": "Java",
+      "D": "Rust",
+      "E": "Python"
+    },
+    "correct": "E",
+    "explanation": "U jazyků C, C++ se zdrojový kód zkompiluje (přeloží) do instrukcí .exe souboru před spuštěním. Python je interpretovaný jazyk – kód se překládá a provádí postupně za běhu řádek po řádku."
+  },
+  {
+    "id": 51,
+    "topic": "DEV",
+    "difficulty": "medium",
+    "question": "Co je Git?",
+    "answers": {
+      "A": "Distribuovaný systém pro správu verzí zdrojového kódu",
+      "B": "Programovací jazyk pro vývoj webových aplikací",
+      "C": "Databázový systém pro ukládání strukturovaných dat",
+      "D": "Webový server pro hostování internetových stránek",
+      "E": "Nástroj pro správu operačních systémů"
+    },
+    "correct": "A",
+    "explanation": "Představ si ho jako funkci 'Uložit jako' na steroidech pro programátory. Pokaždé, když uložíš kód (commit), Git si pamatuje, co přesně jsi změnil, a umožňuje návrat do historie nebo sdílení kódu s týmem."
+  },
+  {
+    "id": 52,
+    "topic": "DEV",
+    "difficulty": "medium",
+    "question": "Co je Composer?",
+    "answers": {
+      "A": "Programovací jazyk pro tvorbu webových aplikací",
+      "B": "Nástroj pro správu závislostí v PHP projektech",
+      "C": "Databázový systém pro ukládání dat aplikace",
+      "D": "Webový server pro spouštění PHP aplikací",
+      "E": "Nástroj pro návrh uživatelského rozhraní"
+    },
+    "correct": "B",
+    "explanation": "Když píšeš kód v PHP a chceš využít cizí balíček funkcí (např. pro posílání e-mailů), nemusíš ho ručně stahovat. Napíšeš příkaz do Composeru a on balíček stáhne a zapojí do projektu."
+  },
+  {
+    "id": 53,
+    "topic": "DEV",
+    "difficulty": "medium",
+    "question": "Co je DOM?",
+    "answers": {
+      "A": "Programovací jazyk používaný pro tvorbu webových aplikací",
+      "B": "Databázový systém pro ukládání webových dat",
+      "C": "Model dokumentu reprezentující strukturu HTML nebo XML stránky",
+      "D": "Webový server pro zpracování HTTP požadavků",
+      "E": "Nástroj pro správu verzí zdrojového kódu"
+    },
+    "correct": "C",
+    "explanation": "Document Object Model je logický 'strom', který si prohlížeč postaví z HTML kódu. Pomocí JavaScriptu se pak můžeš do tohoto stromu nořit a měnit prvky na stránce."
+  },
+  {
+    "id": 54,
+    "topic": "SW",
+    "difficulty": "medium",
+    "question": "Co je vektorová grafika?",
+    "answers": {
+      "A": "Grafika složená z pixelů uspořádaných do mřížky",
+      "B": "Grafika uložená pouze ve formátu JPEG",
+      "C": "Grafika uložená pouze ve formátu JPEG",
+      "D": "Grafika tvořená matematickým popisem tvarů a křivek",
+      "E": "Grafika tvořená barevnými body bez struktury"
+    },
+    "correct": "D",
+    "explanation": "Nevyužívá čtverečky (pixely), ale pamatuje si obraz jako matematický vzorec 'narýsuj čáru z bodu A do B'. Díky tomu se dá libovolně zvětšovat a netvoří 'kostičky' (např. loga, ikony)."
+  },
+  {
+    "id": 55,
+    "topic": "SW",
+    "difficulty": "medium",
+    "question": "Co je rastrová grafika?",
+    "answers": {
+      "A": "Grafika tvořená matematickým popisem křivek",
+      "B": "Grafika uložená pouze ve formátu SVG",
+      "C": "Grafika bez pevného rozlišení při zvětšení",
+      "D": "Grafika určená výhradně pro technické výkresy",
+      "E": "Grafika složená z pixelů uspořádaných do mřížky"
+    },
+    "correct": "E",
+    "explanation": "Klasická fotografie z foťáku. Skládá se z tisíců malých barevných kostiček naskládaných vedle sebe. Když takový obrázek moc přiblížíš, začne být rozmazaný (zubatý)."
+  },
+  {
+    "id": 56,
+    "topic": "SW",
+    "difficulty": "medium",
+    "question": "Který z uvedených souborových formátů není rastrový?",
+    "answers": {
+      "A": "SVG",
+      "B": "JPG",
+      "C": "GIF",
+      "D": "JFIF",
+      "E": "BMP"
+    },
+    "correct": "A",
+    "explanation": "Scalable Vector Graphics. Vše ostatní jmenované jsou rastrové obrázky, zatímco SVG je formát navržený pro vektorovou grafiku na internetu."
+  },
+  {
+    "id": 57,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je balíček MSI ve Windows?",
+    "answers": {
+      "A": "Spustitelný soubor určený pro běh programů v systému",
+      "B": "Instalační balíček používaný službou Windows Installer",
+      "C": "Archivní soubor pro kompresi dat v systému Windows",
+      "D": "Konfigurační soubor pro nastavení systému Windows",
+      "E": "Nástroj pro správu uživatelských účtů v systému"
+    },
+    "correct": "B",
+    "explanation": "Microsoft Installer. Je to na rozdíl od klasického .exe souboru standardizovaná 'krabice' na instalaci softwaru, často využívaná firmami pro hromadné instalace po síti."
+  },
+  {
+    "id": 58,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "K čemu ve Windows slouží registry?",
+    "answers": {
+      "A": "K instalaci a odinstalaci programů v systému",
+      "B": "K ukládání uživatelských dokumentů a souborů",
+      "C": "K evidenci konfigurace systému a aplikací",
+      "D": "K řízení síťové komunikace mezi počítači",
+      "E": "K automatickému aktualizování operačního systému"
+    },
+    "correct": "C",
+    "explanation": "Je to gigantická centrální databáze (strom), do které si Windows i nainstalované programy ukládají veškerá svá nastavení (např. barvy motivu nebo polohu ikonek)."
+  },
+  {
+    "id": 59,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Který z uvedených bash příkazů slouží k instalaci development balíčku jazyka Python superuserem?",
+    "answers": {
+      "A": "apt-get run python3-dev",
+      "B": "sudo install python3-dev",
+      "C": "apt python3-dev install",
+      "D": "sudo apt install python3-dev",
+      "E": "python3-dev install sudo"
+    },
+    "correct": "D",
+    "explanation": "Příkaz sudo zaručí administrátorská práva, apt je balíčkovací manažer (třeba v Ubuntu), následuje pokyn install a jméno balíčku."
+  },
+  {
+    "id": 60,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "K čemu se ve Windows používá dávkový soubor?",
+    "answers": {
+      "A": "K zabezpečení systému proti škodlivému softwaru",
+      "B": "K tvorbě grafického uživatelského rozhraní",
+      "C": "K instalaci ovladačů hardwaru v systému",
+      "D": "K ukládání konfigurace systému a aplikací",
+      "E": "K automatickému spouštění sekvence příkazů v příkazovém řádku"
+    },
+    "correct": "E",
+    "explanation": "Tzv. Batch soubor (.bat). Abys nemusel do černé příkazové řádky psát 10 příkazů ručně jeden po druhém, napíšeš je pod sebe do texťáku a spustíš najednou jako dávku."
+  },
+  {
+    "id": 61,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je virtualizace?",
+    "answers": {
+      "A": "Vytvoření virtuálního prostředí pro běh více systémů na jednom hardware",
+      "B": "Instalace více programů do jednoho operačního systému současně",
+      "C": "Zálohování dat na vzdálený server v síti",
+      "D": "Šifrování dat uložených na pevném disku",
+      "E": "Optimalizace výkonu procesoru v systému"
+    },
+    "correct": "A",
+    "explanation": "Duplicitní/podobná otázka z tvého zadání: Pomocí vrstvy navíc (hypervisoru) dokážeme rozřezat jeden silný server na spoustu menších a v každém rozběhnout izolovaný systém."
+  },
+  {
+    "id": 62,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "K čemu slouží správce úloh (Task Manager) ve Windows?",
+    "answers": {
+      "A": "K úpravě systémového registru v systému Windows",
+      "B": "Ke sledování a řízení běžících procesů v systému",
+      "C": "K instalaci ovladačů hardwarových zařízení",
+      "D": "K zálohování uživatelských souborů na disk",
+      "E": "K nastavení síťového připojení počítače"
+    },
+    "correct": "B",
+    "explanation": "Nástroj spouštěný přes Ctrl+Shift+Esc, který uživateli ukazuje vše, co právě v systému běží, jak moc to využívá procesor/paměť a umožňuje zaseklé programy 'sestřelit'."
+  },
+  {
+    "id": 63,
+    "topic": "Cybersecurity",
+    "difficulty": "medium",
+    "question": "Co je hashovací funkce v kybernetické bezpečnosti?",
+    "answers": {
+      "A": "Funkce pro šifrování komunikace mezi počítači",
+      "B": "Nástroj pro kompresi souborů v systému",
+      "C": "Funkce převádějící data na pevně dlouhý otisk (hash)",
+      "D": "Program pro správu databázových systémů",
+      "E": "Metoda zálohování dat na externí úložiště"
+    },
+    "correct": "C",
+    "explanation": "Znovu hashovací funkce: Je to nevratný algoritmus. Server ukládá pouze otisk tvého hesla. Když se přihlašuješ, server udělá otisk ze zadaného hesla a pokud se oba otisky shodují, pustí tě dovnitř."
+  },
+  {
+    "id": 64,
+    "topic": "Networking",
+    "difficulty": "medium",
+    "question": "K čemu slouží DNS?",
+    "answers": {
+      "A": "K ukládání souborů na vzdálený server",
+      "B": "K šifrování komunikace mezi zařízeními",
+      "C": "K řízení přístupu uživatelů k systému",
+      "D": "K překladu doménových jmen na IP adresy v síti",
+      "E": "K optimalizaci výkonu počítačové sítě"
+    },
+    "correct": "D",
+    "explanation": "Domain Name System je obrovský internetový telefonní seznam. Umožňuje nám psát srozumitelné 'seznam.cz', místo abychom si do prohlížeče museli pamatovat nesmyslná čísla jako '77.75.75.172'."
+  },
+  {
+    "id": 65,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je bootování (boot)?",
+    "answers": {
+      "A": "Proces vypnutí počítače uživatelem",
+      "B": "Instalace nového programu do systému",
+      "C": "Zálohování dat na pevný disk počítače",
+      "D": "Přenos dat mezi zařízeními v síti",
+      "E": "Proces spuštění operačního systému po zapnutí zařízení"
+    },
+    "correct": "E",
+    "explanation": "Od stisknutí zapínacího tlačítka až po přihlašovací obrazovku Windows. Hardware se inicializuje, probudí zavaděč a ten do paměti natáhne operační systém."
+  },
+  {
+    "id": 66,
+    "topic": "Cybersecurity",
+    "difficulty": "medium",
+    "question": "Co je DoS útok?",
+    "answers": {
+      "A": "Útok zahlcující službu, aby nebyla dostupná",
+      "B": "Útok zaměřený na získání přihlašovacích údajů",
+      "C": "Metoda šifrování dat uložených na disku",
+      "D": "Program pro správu síťových zařízení",
+      "E": "Nástroj pro testování výkonu systému"
+    },
+    "correct": "A",
+    "explanation": "Duplicitní DoS. Je to útok za účelem vyřazení z provozu. Cílem tu není cokoliv ukrást, ale způsobit škodu tím, že web nebo systém 'spadne'."
+  },
+  {
+    "id": 67,
+    "topic": "Networking",
+    "difficulty": "medium",
+    "question": "K čemu slouží příkaz ping?",
+    "answers": {
+      "A": "K přenosu souborů mezi počítači v síti",
+      "B": "K testování dostupnosti síťového zařízení v síti",
+      "C": "K nastavení IP adresy síťového rozhraní",
+      "D": "K restartování síťové služby systému",
+      "E": "K šifrování síťové komunikace"
+    },
+    "correct": "B",
+    "explanation": "Ping posílá malinkatý datový balíček na cílovou IP adresu (např. googlu) a měří dobu, za jak dlouho mu přijde odpověď. Zjistí tím, zda je cíl 'naživu'."
+  },
+  {
+    "id": 68,
+    "topic": "Cybersecurity",
+    "difficulty": "medium",
+    "question": "K čemu slouží antivirový program?",
+    "answers": {
+      "A": "K instalaci aplikací do operačního systému",
+      "B": "K vytváření databází pro ukládání dat",
+      "C": "K ochraně proti škodlivému softwaru v systému",
+      "D": "K řízení síťové komunikace počítače",
+      "E": "K zálohování uživatelských dat na disk"
+    },
+    "correct": "C",
+    "explanation": "Skenuje paměť, soubory na disku a nové stahované soubory. Pokud narazí na vzor kódu, který figuruje na černé listině známých hrozeb, zablokuje ho."
+  },
+  {
+    "id": 69,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je proces v operačním systému?",
+    "answers": {
+      "A": "Uložený soubor na disku počítače",
+      "B": "Typ grafického uživatelského rozhraní",
+      "C": "Databázová tabulka v informačním systému",
+      "D": "Běžící instance programu v operační paměti",
+      "E": "Síťový protokol pro komunikaci zařízení"
+    },
+    "correct": "D",
+    "explanation": "Dokud je hra (např. The Sims.exe) uložena na disku, je to jen soubor s kódem. Jakmile na něj klikneš, OS ho nahraje do paměti a dá mu prostor k běhu – a stane se z něj 'proces'."
+  },
+  {
+    "id": 70,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co znamená aktualizace softwaru (update)?",
+    "answers": {
+      "A": "Odinstalování programu ze systému počítače",
+      "B": "Změna názvu souboru v systému",
+      "C": "Zálohování dat na externí disk",
+      "D": "Přesun souboru do jiného adresáře",
+      "E": "Instalace novější verze programu nebo opravy chyb"
+    },
+    "correct": "E",
+    "explanation": "Update instaluje záplaty ('patche'). Opravuje bezpečnostní díry v kódu a velmi často přidává úplně nové funkce, které v době vydání programu neexistovaly."
+  },
+  {
+    "id": 71,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je složka?",
+    "answers": {
+      "A": "Soubor obsahující spustitelný program",
+      "B": "Datová struktura pro ukládání konfigurací",
+      "C": "Místo pro organizaci souborů a dalších složek",
+      "D": "Paměťový prostor pro běžící procesy",
+      "E": "Speciální soubor pro ukládání logů"
+    },
+    "correct": "C",
+    "explanation": "Adresář (Directory/Složka) ve skutečnosti na disku fyzicky žádný ohraničený prostor nezabírá. Je to jen virtuální způsob zobrazení operačního systému, aby měl uživatel v souborech přehled."
+  },
+  {
+    "id": 72,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je cesta (path)?",
+    "answers": {
+      "A": "Název souboru bez přípony",
+      "B": "Zápis určující umístění souboru nebo složky",
+      "C": "Seznam běžících procesů v systému",
+      "D": "Adresa IP zařízení v síti",
+      "E": "Identifikátor uživatele v systému"
+    },
+    "correct": "B",
+    "explanation": "Textový řetězec, který ukazuje přesnou navigaci diskovým stromem k souboru. Např: 'C:\\Users\\Karel\\Dokumenty\\tajne.pdf'"
+  },
+  {
+    "id": 73,
+    "topic": "Networking",
+    "difficulty": "medium",
+    "question": "Co je URI?",
+    "answers": {
+      "A": "Protokol pro přenos souborů",
+      "B": "Adresa serveru v počítačové síti",
+      "C": "Jednoznačný identifikátor zdroje",
+      "D": "Nástroj pro správu domén",
+      "E": "Formát pro ukládání webových stránek"
+    },
+    "correct": "C",
+    "explanation": "Uniform Resource Identifier je obecný formát, jak najít a identifikovat zdroj (nejčastěji se používá specifický typ URL např. http://www.google.com, ale může to být i kniha z knihovny)."
+  },
+  {
+    "id": 74,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je v Linuxu z hlediska souborového systému tiskárna?",
+    "answers": {
+      "A": "Samostatný proces běžící v systému",
+      "B": "Síťové zařízení bez reprezentace v systému",
+      "C": "Virtuální paměťové zařízení systému",
+      "D": "Speciální soubor reprezentující zařízení",
+      "E": "Konfigurační služba operačního systému"
+    },
+    "correct": "D",
+    "explanation": "Klíčová filozofie UNIXových systémů zní: 'Všechno je soubor'. Disky, myši, klávesnice i tiskárny Linux chápe jako speciální soubory (Device Files) uložené většinou ve složce /dev."
+  },
+  {
+    "id": 75,
+    "topic": "Graphics",
+    "difficulty": "medium",
+    "question": "Co je to barevná hloubka?",
+    "answers": {
+      "A": "Počet barev použitých v obrázku",
+      "B": "Rozlišení obrazu v pixelech",
+      "C": "Velikost grafického souboru",
+      "D": "Počet bitů pro jednu barvu",
+      "E": "Typ grafického formátu souboru"
+    },
+    "correct": "D",
+    "explanation": "Určuje, kolik informací si neseme o barvě jednoho pixelu. Například při hloubce 1 bit má obrázek jen 2 barvy (černá a bílá). Při nejběžnějších 24 bitech nabízí miliony odstínů."
+  },
+  {
+    "id": 76,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Co je služba (service)?",
+    "answers": {
+      "A": "Program běžící na pozadí systému",
+      "B": "Aplikace pro správu souborů",
+      "C": "Nástroj pro instalaci programů",
+      "D": "Typ databázového systému",
+      "E": "Grafické rozhraní operačního systému"
+    },
+    "correct": "A",
+    "explanation": "Ve Windows jsou Služby (v Linuxu zvané Démoni) tiché procesy bez jakéhokoliv viditelného okna, které neustále pracují na pozadí (např. antivirová kontrola nebo čekání na odeslání tisku)."
+  },
+  {
+    "id": 77,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Jak přistupují aplikace ve Windows k HW počítače?",
+    "answers": {
+      "A": "Přímo bez zásahu operačního systému",
+      "B": "Pomocí ovladačů a jádra systému",
+      "C": "Pouze prostřednictvím BIOSu",
+      "D": "Přes síťové služby systému",
+      "E": "Pomocí databázových nástrojů"
+    },
+    "correct": "B",
+    "explanation": "Hra nemůže napřímo přikazovat grafické kartě, protože by způsobila pád Windows. Proto musí hovořit s jádrem, to předá pokyn ovladačům a ty už přesně ví, jak pohnout hardwarem."
+  },
+  {
+    "id": 78,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Jaký význam mají ve Windows DLL soubory?",
+    "answers": {
+      "A": "Ukládají konfiguraci systému",
+      "B": "Obsahují uživatelská data",
+      "C": "Sdílené knihovny funkcí programů",
+      "D": "Slouží k instalaci aplikací",
+      "E": "Řídí síťovou komunikaci"
+    },
+    "correct": "C",
+    "explanation": "Dynamic Link Library je soubor se spoustou užitečných kódů. Aby každý tvůrce aplikace nemusel psát svůj složitý kód např. pro zobrazení tlačítka, odkáže se na sdílenou 'knihovnu' funkcí ve Windows."
+  },
+  {
+    "id": 79,
+    "topic": "Cybersecurity",
+    "difficulty": "medium",
+    "question": "K čemu používají antivirové programy trezor?",
+    "answers": {
+      "A": "K ukládání aktualizací systému",
+      "B": "K uchování podezřelých souborů",
+      "C": "K šifrování komunikace",
+      "D": "K instalaci aplikací",
+      "E": "K optimalizaci výkonu systému"
+    },
+    "correct": "B",
+    "explanation": "Karanténa (Trezor). Antivirus místo tvrdého smazání soubor přesune a zakóduje. Zabrání mu tak škodit, ale umožní jeho obnovu, pokud se zjistí, že šlo jen o 'falešný poplach'."
+  },
+  {
+    "id": 80,
+    "topic": "OS",
+    "difficulty": "medium",
+    "question": "Kdo je považován za autora OS Linux?",
+    "answers": {
+      "A": "Bill Gates",
+      "B": "Steve Jobs",
+      "C": "Richard Stallman",
+      "D": "Linus Torvalds",
+      "E": "Mark Zuckerberg"
+    },
+    "correct": "D",
+    "explanation": "Linus Torvalds, finsko-americký programátor, napsal samotné jádro (kernel) Linuxu v roce 1991 během studií pro zábavu. Na zbytek systému dodnes dohlíží celosvětová Open-Source komunita."
+  }
+]

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="cs" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Kvíz a Přehled</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>IT Kvíz a Přehled</h1>
+        <button
+          id="theme-toggle"
+          class="theme-btn"
+          title="Přepnout tmavý/světlý režim"
+        >
+          <span class="icon">🌙</span>
+        </button>
+      </div>
+      <nav>
+        <button id="nav-quiz" class="active">Kvíz</button>
+        <button id="nav-review">Přehled otázek</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="quiz-section">
+        <div id="quiz-setup">
+          <h2>Nastavení kvízu</h2>
+
+          <div class="form-group">
+            <label for="quiz-category">Vyberte okruh otázek:</label>
+            <select id="quiz-category">
+              <option value="all">Všechny (SW i HW)</option>
+              <option value="sw">Pouze SW</option>
+              <option value="hw">Pouze HW</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="quiz-count"
+              >Počet otázek (10 -
+              <span id="max-count-display">...</span>):</label
+            >
+            <input type="number" id="quiz-count" min="10" value="10" />
+          </div>
+
+          <button id="start-btn" class="btn-primary">Začít kvíz</button>
+        </div>
+
+        <div id="quiz-container" class="hidden">
+          <div class="progress">
+            Otázka <span id="current-q-num">1</span> z
+            <span id="total-q-num">10</span>
+          </div>
+          <h3 id="question-text"></h3>
+          <div id="answers-container"></div>
+          <p id="feedback" class="hidden"></p>
+          <div style="display: flex; gap: 15px; flex-wrap: wrap">
+            <button id="next-btn" class="btn-primary hidden">
+              Další otázka
+            </button>
+            <button id="end-early-btn" class="btn-danger">
+              Ukončit předčasně
+            </button>
+          </div>
+        </div>
+
+        <div id="quiz-result" class="hidden">
+          <h2>Konec kvízu!</h2>
+          <p class="score-text">
+            Vaše skóre: <span id="score-display" class="highlight">0</span> /
+            <span id="score-total">0</span>
+          </p>
+          <button id="restart-btn" class="btn-primary">Hrát znovu</button>
+        </div>
+      </section>
+
+      <section id="review-section" class="hidden">
+        <h2>Přehled všech otázek</h2>
+        <div id="review-filters">
+          <button class="filter-btn active" data-filter="all">Všechny</button>
+          <button class="filter-btn" data-filter="sw">Software</button>
+          <button class="filter-btn" data-filter="hw">Hardware</button>
+        </div>
+        <div id="review-container"></div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

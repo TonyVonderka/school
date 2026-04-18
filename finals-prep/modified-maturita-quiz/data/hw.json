@@ -1,0 +1,1127 @@
+[
+  {
+    "id": 1,
+    "topic": "CPU",
+    "difficulty": "medium",
+    "question": "Co je cache paměť procesoru?",
+    "answers": {
+      "A": "Malá rychlá paměť mezi CPU a RAM",
+      "B": "Paměť pro dlouhodobé ukládání souborů na disk",
+      "C": "Paměť obsahující firmware systému BIOS",
+      "D": "Paměť používaná výhradně grafickou kartou",
+      "E": "Paměť určená pro síťovou komunikaci zařízení"
+    },
+    "correct": "A",
+    "explanation": "Cache je extrémně rychlá paměť zabudovaná přímo v procesoru, která uchovává nejčastěji používaná data, aby CPU nemusel čekat na pomalejší RAM."
+  },
+  {
+    "id": 2,
+    "topic": "CPU",
+    "difficulty": "medium",
+    "question": "Co je pipeline v procesoru?",
+    "answers": {
+      "A": "Způsob ukládání dat na pevný disk počítače",
+      "B": "Zpracování instrukcí ve více fázích současně pro zvýšení výkonu",
+      "C": "Metoda chlazení procesoru pomocí ventilátorů",
+      "D": "Technologie přenosu dat po síťové sběrnici",
+      "E": "Způsob šifrování instrukcí procesoru"
+    },
+    "correct": "B",
+    "explanation": "Pipeline funguje jako tovární montážní linka. Zatímco se jedna instrukce dokončuje, další už se začíná načítat, což obrovsky zvyšuje rychlost."
+  },
+  {
+    "id": 3,
+    "topic": "CPU",
+    "difficulty": "medium",
+    "question": "Co znamená TDP procesoru?",
+    "answers": {
+      "A": "Počet jader procesoru v jednom čipu",
+      "B": "Velikost cache paměti procesoru",
+      "C": "Maximální množství tepla, které musí chlazení odvést",
+      "D": "Počet instrukcí za sekundu",
+      "E": "Spotřebu energie při nečinnosti"
+    },
+    "correct": "C",
+    "explanation": "TDP (Thermal Design Power) ti říká, jak dimenzovaný (výkonný) chladič budeš potřebovat, aby se procesor v zátěži nepřehřál."
+  },
+  {
+    "id": 4,
+    "topic": "CPU",
+    "difficulty": "medium",
+    "question": "Co znamená taktovací frekvence CPU?",
+    "answers": {
+      "A": "Velikost operační paměti počítače",
+      "B": "Počet jader procesoru",
+      "C": "Kapacitu pevného disku",
+      "D": "Počet cyklů, které procesor vykoná za jednu sekundu",
+      "E": "Počet připojených zařízení"
+    },
+    "correct": "D",
+    "explanation": "Udává se v Hertzech (dnes GHz). Pokud má procesor 4 GHz, znamená to, že jeho krystal 'tikne' 4 miliardkrát za sekundu."
+  },
+  {
+    "id": 5,
+    "topic": "CPU",
+    "difficulty": "medium",
+    "question": "Co je instrukční sada procesoru?",
+    "answers": {
+      "A": "Seznam programů v operačním systému",
+      "B": "Databáze uložených souborů",
+      "C": "Seznam periferních zařízení",
+      "D": "Grafické funkce systému",
+      "E": "Soubor instrukcí, které procesor umí vykonávat"
+    },
+    "correct": "E",
+    "explanation": "Je to vlastně 'slovník' základních příkazů (např. sčítání, přesun dat), kterým daný procesor (např. x86 nebo ARM) rozumí."
+  },
+  {
+    "id": 6,
+    "topic": "MEM",
+    "difficulty": "medium",
+    "question": "Co je RAM paměť?",
+    "answers": {
+      "A": "Volatilní paměť používaná pro běh programů",
+      "B": "Nevolatilní paměť pro dlouhodobé uložení dat",
+      "C": "Paměť pouze pro BIOS systému",
+      "D": "Paměť používaná grafickou kartou",
+      "E": "Paměť pro archivaci dat"
+    },
+    "correct": "A",
+    "explanation": "RAM je 'pracovní stůl' počítače. Je volatilní (po vypnutí napájení se data smažou) a slouží k rychlému přístupu pro běžící aplikace."
+  },
+  {
+    "id": 7,
+    "topic": "MEM",
+    "difficulty": "medium",
+    "question": "Co je ROM paměť?",
+    "answers": {
+      "A": "Paměť pro běh aplikací",
+      "B": "Nevolatilní paměť obsahující firmware zařízení",
+      "C": "Dočasná paměť CPU",
+      "D": "Paměť GPU",
+      "E": "Paměť pro cache procesoru"
+    },
+    "correct": "B",
+    "explanation": "Read-Only Memory uchovává data i bez proudu (nevolatilní). Je v ní uložen základní software (firmware/BIOS) nutný pro spuštění hardwaru."
+  },
+  {
+    "id": 8,
+    "topic": "MEM",
+    "difficulty": "medium",
+    "question": "Co je cache miss?",
+    "answers": {
+      "A": "Situace, kdy je paměť RAM plná",
+      "B": "Chyba při zápisu na disk",
+      "C": "Situace, kdy požadovaná data nejsou v cache paměti",
+      "D": "Výpadek napájení paměti",
+      "E": "Selhání procesoru"
+    },
+    "correct": "C",
+    "explanation": "Pokud CPU hledá data v rychlé cache a nenajde je ('miss' = minutí), musí si pro ně dojít do mnohem pomalejší paměti RAM."
+  },
+  {
+    "id": 9,
+    "topic": "STORAGE",
+    "difficulty": "medium",
+    "question": "Co je SSD disk?",
+    "answers": {
+      "A": "Úložiště využívající magnetické plotny",
+      "B": "Paměť RAM pro běh systému",
+      "C": "Optické médium pro ukládání dat",
+      "D": "Úložiště využívající flash paměť bez mechanických částí",
+      "E": "Externí paměť USB typu RAM"
+    },
+    "correct": "D",
+    "explanation": "Solid State Drive nepoužívá pohyblivé části. Data se ukládají do polovodičových flash čipů, což ho činí tichým, odolným a velmi rychlým."
+  },
+  {
+    "id": 10,
+    "topic": "STORAGE",
+    "difficulty": "medium",
+    "question": "Co je HDD disk?",
+    "answers": {
+      "A": "Úložiště využívající nevolatilní polovodičovou paměť",
+      "B": "Paměť RAM pro běh systému",
+      "C": "Optický disk pro čtení dat",
+      "D": "Síťové úložiště Netowrk Attached Storage (NAS)",
+      "E": "Úložiště využívající rotující magnetické plotny"
+    },
+    "correct": "E",
+    "explanation": "Hard Disk Drive je klasický mechanický disk. Data zapisuje magnetická hlava na plotny rotující vysokou rychlostí."
+  },
+  {
+    "id": 11,
+    "topic": "STORAGE",
+    "difficulty": "medium",
+    "question": "Co je NVMe SSD?",
+    "answers": {
+      "A": "SSD využívající PCIe rozhraní pro vysokou rychlost přenosu",
+      "B": "Klasický Hard Dick Drive s vysokou kapacitou paměti (HDD)",
+      "C": "Externí disk připojený přes USB",
+      "D": "Paměť RAM pro běh aplikací",
+      "E": "Optický disk pro čtení dat"
+    },
+    "correct": "A",
+    "explanation": "Non-Volatile Memory Express (NVMe) je protokol navržený speciálně pro rychlé SSD disky, který využívá sběrnici PCI Express namísto starší a pomalejší SATA."
+  },
+  {
+    "id": 12,
+    "topic": "STORAGE",
+    "difficulty": "medium",
+    "question": "Co je RAID 1?",
+    "answers": {
+      "A": "Rozdělení dat mezi disky pro výkon",
+      "B": "Zrcadlení dat na dvou discích pro zvýšení bezpečnosti",
+      "C": "Zálohování dat na cloudové úložiště",
+      "D": "Šifrování dat na disku pomocí algoritmu RAID 1",
+      "E": "Komprese dat pomocí komprimačního algoritmu RAID 1"
+    },
+    "correct": "B",
+    "explanation": "Všechna data se zapisují identicky na dva fyzické disky (tzv. mirroring). Pokud se jeden porouchá, vše je zachováno na tom druhém."
+  },
+  {
+    "id": 13,
+    "topic": "MB",
+    "difficulty": "medium",
+    "question": "Co je chipset základní desky?",
+    "answers": {
+      "A": "Paměťový modul RAM",
+      "B": "Procesorová jednotka",
+      "C": "Řídicí obvody koordinující komunikaci mezi komponentami",
+      "D": "Dedikovaná grafická karta s vysokým výkonem",
+      "E": "Pulzní napájecí zdroj"
+    },
+    "correct": "C",
+    "explanation": "Chipset je 'mozek' základní desky, který diriguje tok dat mezi procesorem, pamětí, grafickou kartou a všemi porty."
+  },
+  {
+    "id": 14,
+    "topic": "MB",
+    "difficulty": "medium",
+    "question": "Co je datová sběrnice?",
+    "answers": {
+      "A": "Slouží k napájení zařízení",
+      "B": "Slouží k ukládání dat",
+      "C": "Slouží k přenosu zvuku",
+      "D": "Slouží k přenosu dat mezi komponentami",
+      "E": "Slouží k chlazení"
+    },
+    "correct": "D",
+    "explanation": "Sběrnice (bus) si představ jako 'dálnici', po které cestují elektrické signály reprezentující data mezi součástkami počítače."
+  },
+  {
+    "id": 15,
+    "topic": "MB",
+    "difficulty": "medium",
+    "question": "Co je PCI Express?",
+    "answers": {
+      "A": "Paralelní rozhraní pro staré disky",
+      "B": "Jiné označení pro skupinu síťových protokolů TCP/IP",
+      "C": "Napájecí konektor základní desky",
+      "D": "Paměťový modul",
+      "E": "Sériové rozhraní pro připojení rozšiřujících karet"
+    },
+    "correct": "E",
+    "explanation": "PCIe je moderní, extrémně rychlé rozhraní na základní desce, do kterého se strkají grafické karty (GPU), zvukové karty nebo rychlé NVMe SSD."
+  },
+  {
+    "id": 16,
+    "topic": "IO",
+    "difficulty": "medium",
+    "question": "K čemu slouží konektor HDMI?",
+    "answers": {
+      "A": "Přenos digitálního obrazu a zvuku mezi zařízeními",
+      "B": "Přenos dat v síti propojující uzly v sítí optickým kabelem",
+      "C": "Napájení zařízení",
+      "D": "Připojení disku",
+      "E": "Připojení klávesnice"
+    },
+    "correct": "A",
+    "explanation": "High-Definition Multimedia Interface posílá naráz obraz ve vysokém rozlišení i zvuk z počítače či konzole do monitoru nebo televize."
+  },
+  {
+    "id": 17,
+    "topic": "IO",
+    "difficulty": "medium",
+    "question": "K čemu slouží konektor RJ45?",
+    "answers": {
+      "A": "Přenos obrazu",
+      "B": "Připojení zařízení do ethernetové sítě",
+      "C": "Napájení zařízení",
+      "D": "Propojení monitoru a sound systému",
+      "E": "Připojení disku nebo jiného paměťového média pomocí OTP"
+    },
+    "correct": "B",
+    "explanation": "RJ45 je klasická 'internetová' koncovka (na kroucené dvojlince), kterou připojuješ počítač do routeru nebo switche (tzv. LAN kabel)."
+  },
+  {
+    "id": 18,
+    "topic": "DISPLAY",
+    "difficulty": "medium",
+    "question": "Co je obnovovací frekvence monitoru?",
+    "answers": {
+      "A": "Hustota pixelů, tedy počet pixelů na palec",
+      "B": "Délka úhlopříčky obrazovky udávaná v palcích",
+      "C": "Počet zobrazení obrazu za sekundu",
+      "D": "Jas monitoru",
+      "E": "Rychlost CPU"
+    },
+    "correct": "C",
+    "explanation": "Udává se v Hz (např. 60 Hz, 144 Hz). Říká, kolikrát za sekundu monitor stihne překreslit celý obraz. Vyšší hodnota znamená plynulejší pohyb."
+  },
+  {
+    "id": 19,
+    "topic": "DISPLAY",
+    "difficulty": "medium",
+    "question": "Co je rozlišení monitoru?",
+    "answers": {
+      "A": "Velikost monitoru",
+      "B": "Doba změny pixelu mezi dvěma stavy",
+      "C": "Jas monitoru",
+      "D": "Počet pixelů na obrazovce v horizontálním a vertikálním směru",
+      "E": "Frekvence CPU"
+    },
+    "correct": "D",
+    "explanation": "Například 1920x1080 (FullHD) znamená 1920 bodů na šířku a 1080 na výšku. Čím víc bodů, tím ostřejší obraz."
+  },
+  {
+    "id": 20,
+    "topic": "DISPLAY",
+    "difficulty": "medium",
+    "question": "Co znamená odezva monitoru?",
+    "answers": {
+      "A": "Počet pixelů",
+      "B": "Velikost monitoru",
+      "C": "Jas monitoru",
+      "D": "Obnovovací frekvence",
+      "E": "Doba změny pixelu mezi dvěma stavy"
+    },
+    "correct": "E",
+    "explanation": "Čas v milisekundách (ms), za který bod (pixel) dokáže změnit barvu (např. z šedé na šedou - GtG). Rychlejší odezva zamezuje 'rozmazání' pohybu (ghosting)."
+  },
+  {
+    "id": 21,
+    "topic": "COMPONENTS",
+    "difficulty": "medium",
+    "question": "Který parametr grafické karty nejvíce ovlivňuje výkon při zpracování grafiky?",
+    "answers": {
+      "A": "Kapacita pevného disku",
+      "B": "Taktovací frekvence procesoru",
+      "C": "Počet shader jednotek GPU",
+      "D": "Velikost operační paměti RAM",
+      "E": "Typ napájecího zdroje"
+    },
+    "correct": "C",
+    "explanation": "GPU jsou navržené pro masivní paralelní počítání. Mají proto stovky až tisíce malých výpočetních jader (shaderů), které obraz vykreslují současně."
+  },
+  {
+    "id": 22,
+    "topic": "COMPONENTS",
+    "difficulty": "medium",
+    "question": "Jaký je hlavní rozdíl mezi integrovanou a dedikovanou grafickou kartou?",
+    "answers": {
+      "A": "Integrovaná karta má vlastní napájení",
+      "B": "Dedikovaná karta sdílí paměť s CPU",
+      "C": "Integrovaná karta je vždy výkonnější",
+      "D": "Dedikovaná karta má vlastní paměť (VRAM)",
+      "E": "Dedikovaná karta je součástí základní desky"
+    },
+    "correct": "D",
+    "explanation": "Dedikovaná karta je samostatná součástka s vlastním grafickým čipem a rychlou pamětí (VRAM). Integrovaná si paměť 'krade' z pomalejší systémové RAM."
+  },
+  {
+    "id": 23,
+    "topic": "COMPONENTS",
+    "difficulty": "medium",
+    "question": "Který parametr grafické paměti (VRAM) ovlivňuje rychlost přenosu dat?",
+    "answers": {
+      "A": "Barva grafické karty",
+      "B": "Šířka paměťové sběrnice",
+      "C": "Velikost monitoru",
+      "D": "Délka paměťové sběrnice",
+      "E": "Typ konektoru HDMI"
+    },
+    "correct": "B",
+    "explanation": "Šířka sběrnice (v bitech, např. 128-bit nebo 256-bit) určuje 'šířku dálnice'. Čím je širší, tím více dat může natéct do paměti a z ní najednou."
+  },
+  {
+    "id": 24,
+    "topic": "PRINT",
+    "difficulty": "medium",
+    "question": "Jaký je princip tisku u laserové tiskárny?",
+    "answers": {
+      "A": "Inkoust je vystřikován na papír pomocí trysek",
+      "B": "Laser vytváří elektrostatický obraz na válci, na který se přenese toner",
+      "C": "Jehly mechanicky vytvářejí obraz na papíře",
+      "D": "Teplo přenáší barvu z pásky na papír",
+      "E": "Světlo LED přímo vypaluje obraz do papíru"
+    },
+    "correct": "B",
+    "explanation": "Laser změní elektrický náboj na světlocitlivém válci. Na tato místa se pak přichytí suchý prach (toner) a nakonec se teplem 'zapeče' do papíru."
+  },
+  {
+    "id": 25,
+    "topic": "PRINT",
+    "difficulty": "medium",
+    "question": "Který parametr nejlépe vyjadřuje kvalitu tisku laserové tiskárny?",
+    "answers": {
+      "A": "Počet USB portů zařízení",
+      "B": "Velikost zásobníku papíru",
+      "C": "Rozlišení tisku v DPI",
+      "D": "Spotřeba elektrické energie",
+      "E": "Hmotnost tiskárny"
+    },
+    "correct": "C",
+    "explanation": "DPI (Dots Per Inch - bodů na palec). Čím vyšší DPI, tím jemnější a kvalitnější je výsledný výtisk."
+  },
+  {
+    "id": 26,
+    "topic": "PRINT",
+    "difficulty": "medium",
+    "question": "Jaký je princip technologie FDM (3D tisk z filamentu)?",
+    "answers": {
+      "A": "Laser speká práškový materiál do pevného tvaru",
+      "B": "Kapalná pryskyřice je vytvrzována UV světlem",
+      "C": "Roztavený filament je nanášen po vrstvách a postupně tuhne",
+      "D": "Jehly mechanicky vytvářejí objekt z materiálu",
+      "E": "Barva je nanášena na papír ve vrstvách"
+    },
+    "correct": "C",
+    "explanation": "FDM (Fused Deposition Modeling) funguje jako tavná pistole. Plastová struna se zahřeje, tryska ji klade vrstvu po vrstvě a plast následně zatuhne."
+  },
+  {
+    "id": 27,
+    "topic": "PRINT",
+    "difficulty": "medium",
+    "question": "Co je filament používaný v 3D tiskárnách?",
+    "answers": {
+      "A": "Kapalný inkoust pro tisk objektů",
+      "B": "Kovový prášek pro laserové tavení",
+      "C": "Plastové vlákno navinuté na cívce určené k tavení",
+      "D": "Plynná směs pro vytváření vrstev",
+      "E": "Tekutá pryskyřice pro stereolitografii"
+    },
+    "correct": "C",
+    "explanation": "Filament je spotřební materiál do FDM 3D tiskáren – jedná se o namotanou plastovou strunu (např. PLA nebo ABS)."
+  },
+  {
+    "id": 28,
+    "topic": "IOT",
+    "difficulty": "medium",
+    "question": "Co označuje pojem IoT (Internet of Things)?",
+    "answers": {
+      "A": "Síť pouze mobilních zařízení připojených k internetu",
+      "B": "Propojení fyzických zařízení vybavených senzory a konektivitou",
+      "C": "Systém pro správu databází na serverech",
+      "D": "Programovací jazyk pro vývoj webových aplikací",
+      "E": "Technologie pro ukládání dat v cloudových úložištích"
+    },
+    "correct": "B",
+    "explanation": "IoT ('Internet věcí') zahrnuje chytré žárovky, termostaty, ledničky i průmyslové senzory, které komunikují s internetem a odesílají data."
+  },
+  {
+    "id": 29,
+    "topic": "IOT",
+    "difficulty": "medium",
+    "question": "Který protokol je typicky využíván pro komunikaci v IoT?",
+    "answers": {
+      "A": "HDMI",
+      "B": "FTP",
+      "C": "MQTT",
+      "D": "VGA",
+      "E": "BIOS"
+    },
+    "correct": "C",
+    "explanation": "MQTT je komunikační protokol navržený speciálně pro IoT. Je velmi úsporný na energii a přenesená data."
+  },
+  {
+    "id": 30,
+    "topic": "DISPLAY",
+    "difficulty": "medium",
+    "question": "Jaký je princip technologie IPS u LCD monitorů?",
+    "answers": {
+      "A": "Pixely jsou tvořeny organickými diodami emitujícími světlo",
+      "B": "Krystaly se natáčejí v rovině panelu a regulují průchod světla",
+      "C": "Elektrony jsou vystřelovány na luminoforovou vrstvu",
+      "D": "Obraz vzniká pomocí laserového paprsku",
+      "E": "Barvy jsou vytvářeny mechanickým pohybem segmentů"
+    },
+    "correct": "B",
+    "explanation": "IPS (In-Plane Switching) otáčí tekuté krystaly rovnoběžně s panelem, díky čemuž tyto monitory nabízejí skvělé pozorovací úhly a krásné barvy."
+  },
+  {
+    "id": 31,
+    "topic": "DISPLAY",
+    "difficulty": "medium",
+    "question": "Jaká je hlavní výhoda OLED displejů oproti klasickým LCD?",
+    "answers": {
+      "A": "Nižší výrobní náklady OLED panelů",
+      "B": "Vyšší spotřeba energie",
+      "C": "Vlastní emise světla bez potřeby podsvícení",
+      "D": "Delší odezva pixelů",
+      "E": "Menší barevný gamut"
+    },
+    "correct": "C",
+    "explanation": "U OLED displeje každý pixel svítí sám o sobě. Když má zobrazit černou barvu, pixel se úplně vypne – proto je OLED černá 'skutečně černá'."
+  },
+  {
+    "id": 32,
+    "topic": "DISPLAY",
+    "difficulty": "medium",
+    "question": "Jaká je typická nevýhoda TN panelů ve srovnání s IPS?",
+    "answers": {
+      "A": "Vyšší výrobní cena TN panelů",
+      "B": "Pomalejší odezva TN panelu",
+      "C": "Vyšší spotřeba energie",
+      "D": "Nižší obnovovací frekvence",
+      "E": "Horší pozorovací úhly a barevné podání"
+    },
+    "correct": "E",
+    "explanation": "TN panely sice mívají rychlou odezvu pro hráče, ale jakmile se na ně podíváš z boku nebo zespoda, barvy se okamžitě zkreslí."
+  },
+  {
+    "id": 33,
+    "topic": "DISPLAY",
+    "difficulty": "medium",
+    "question": "Jaký je princip kapacitního dotykového displeje?",
+    "answers": {
+      "A": "Reaguje na tlak mechanickým stlačením vrstev",
+      "B": "Používá ultrazvuk k určení polohy dotyku",
+      "C": "Detekuje teplotu prstu na povrchu displeje",
+      "D": "Reaguje na změnu elektrického pole při dotyku vodivého objektu",
+      "E": "Využívá infračervený paprsek uvnitř panelu pro detekci dotyku displeje"
+    },
+    "correct": "D",
+    "explanation": "Tento typ je ve všech moderních telefonech. Prst lidského těla je vodivý a při dotyku naruší slabé elektrické pole na obrazovce."
+  },
+  {
+    "id": 34,
+    "topic": "BLUETOOTH",
+    "difficulty": "medium",
+    "question": "Jaká je hlavní vlastnost technologie Bluetooth?",
+    "answers": {
+      "A": "Vysokorychlostní přenos dat na velké vzdálenosti",
+      "B": "Přenos obrazu ve vysokém rozlišení mezi zařízeními",
+      "C": "Bezdrátová komunikace na krátkou vzdálenost s nízkou spotřebou energie",
+      "D": "Kabelové propojení periferií s počítačem",
+      "E": "Satelitní komunikace mezi zařízeními"
+    },
+    "correct": "C",
+    "explanation": "Bluetooth vznikl pro propojení zařízení blízko sebe (sluchátka, myš, mobil) s minimální spotřebou baterie, ne pro přenos obřích dat."
+  },
+  {
+    "id": 35,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co je hlavní funkcí zařízení Raspberry Pi?",
+    "answers": {
+      "A": "Slouží jako velmi výkonná specializovaná dedikovaná grafická karta pro herní počítače",
+      "B": "Jde o jednočipový mikropočítač určený mj. pro výuku programování a principů IT",
+      "C": "Jedná se o výhradně síťový router určený pro domácnosti",
+      "D": "Slouží jako externí síťové úložiště dat označované jako Network Attachment Storage",
+      "E": "Je to zařízení určené pouze pro těžbu kryptoměn"
+    },
+    "correct": "B",
+    "explanation": "Raspberry Pi je levný počítač o velikosti kreditní karty. Má vlastní procesor i RAM a lze na něm tvořit chytrá zařízení nebo se učit programovat."
+  },
+  {
+    "id": 36,
+    "topic": "CPU",
+    "difficulty": "medium",
+    "question": "Jaký je hlavní rozdíl mezi jádry a vlákny procesoru?",
+    "answers": {
+      "A": "Jádra jsou fyzické výpočetní jednotky procesoru, zatímco vlákna jsou logické jednotky umožňující paralelní zpracování instrukcí v rámci jednoho jádra",
+      "B": "Jádra procesoru slouží výhradně pro zpracování grafických operací a vykreslování obrazu, zatímco vlákna jsou určena pouze pro běh operačního systému a správu paměti",
+      "C": "Vlákna představují fyzické části procesoru, které jsou přímo vyrobeny na čipu, zatímco jádra jsou pouze softwarová abstrakce vytvořená operačním systémem pro lepší řízení výkonu",
+      "D": "Jádra a vlákna označují v praxi totéž a rozdíl mezi nimi je pouze terminologický, který vznikl historicky bez technického významu",
+      "E": "Vlákna určují velikost a organizaci cache paměti procesoru a přímo ovlivňují kapacitu L1, L2 a L3 cache, zatímco jádra nemají na cache žádný vliv"
+    },
+    "correct": "A",
+    "explanation": "Jádro je hardwarový obvod, který skutečně počítá. Vlákno je technologie (např. HyperThreading), jak tomuto jádru předhazovat instrukce rychleji ze dvou softwarových front naráz."
+  },
+  {
+    "id": 37,
+    "topic": "GPU",
+    "difficulty": "medium",
+    "question": "Co je hlavní vlastností rozhraní DisplayPort?",
+    "answers": {
+      "A": "Speciální port používaný výhradně pro připojení externích pevných disků a úložných zařízení, který zajišťuje vysokorychlostní přenos dat bez podpory obrazu",
+      "B": "Analogové rozhraní určené výhradně pro přenos obrazu mezi staršími CRT monitory a grafickými kartami, které nepodporuje žádný digitální signál ani zvuk",
+      "C": "Rozhraní navržené pouze pro přenos síťových dat mezi počítači, které využívá stejný princip jako Ethernet, ale s jiným konektorem",
+      "D": "Digitální rozhraní pro přenos obrazu a zvuku mezi počítačem a zobrazovacím zařízením (např. monitorem)",
+      "E": "Bezdrátová technologie pro přenos obrazu mezi zařízeními, která funguje podobně jako Wi-Fi a nevyžaduje žádné kabelové připojení"
+    },
+    "correct": "D",
+    "explanation": "DisplayPort je vedle HDMI moderní grafický standard, hojně používaný u PC kvůli podpoře extrémně vysokých rozlišení a obnovovacích frekvencí."
+  },
+  {
+    "id": 38,
+    "topic": "MEM",
+    "difficulty": "medium",
+    "question": "Jaký je hlavní účel rozhraní USB?",
+    "answers": {
+      "A": "Speciální rozhraní určené výhradně pro připojení monitorů s vysokým rozlišením, které umožňuje přenos obrazu, ale nepodporuje přenos dat ani napájení zařízení",
+      "B": "Technologie navržená pouze pro bezdrátovou komunikaci mezi zařízeními na krátkou vzdálenost, která funguje podobně jako Bluetooth, ale s vyšší rychlostí přenosu",
+      "C": "Univerzální sériové rozhraní pro připojení periferních zařízení a přenos dat i napájení",
+      "D": "Rozhraní používané výhradně v serverech pro připojení interních komponent, jako jsou procesory a paměti, které není dostupné pro běžné uživatele",
+      "E": "Typ konektoru určený pouze pro napájení zařízení bez možnosti přenosu dat, používaný například u některých jednoduchých nabíječek"
+    },
+    "correct": "C",
+    "explanation": "Universal Serial Bus nahradil v počítačích staré sériové a paralelní porty. Jedním kabelem dokážeš přenášet data z flashdisku a zároveň nabíjet zařízení."
+  },
+  {
+    "id": 39,
+    "topic": "BUS",
+    "difficulty": "medium",
+    "question": "Jaká je funkce adresní sběrnice v počítači?",
+    "answers": {
+      "A": "Slouží k přenosu samotných dat mezi procesorem, pamětí a vstupně-výstupními zařízeními, přičemž určuje i formát a strukturu přenášených dat",
+      "B": "Zajišťuje napájení jednotlivých komponent počítače a distribuuje elektrickou energii mezi procesor, paměť a další zařízení v systému",
+      "C": "Umožňuje synchronizaci všech komponent počítače pomocí časovacích signálů, které určují rychlost zpracování instrukcí v procesoru",
+      "D": "Slouží k přenosu adres paměťových buněk nebo zařízení, se kterými procesor komunikuje",
+      "E": "Slouží k ukládání instrukcí programů přímo v procesoru, kde funguje jako interní paměť pro rychlý přístup k vykonávanému kódu"
+    },
+    "correct": "D",
+    "explanation": "Aby CPU mohl číst data, musí vědět, KDE jsou uložena. Adresní sběrnice nese číselné adresy paměťových bloků."
+  },
+  {
+    "id": 40,
+    "topic": "RAM",
+    "difficulty": "medium",
+    "question": "Jak se nazývá slot na základní desce určený pro instalaci pamětí RAM?",
+    "answers": {
+      "A": "PCI Express slot, který je primárně určen pro grafické karty a další rozšiřující karty",
+      "B": "SATA port, který slouží také k připojení pevných disků a SSD",
+      "C": "M.2 slot může být využit i pro instalaci operační paměti",
+      "D": "USB slot jako rozhraní pro rozšíření operační paměti pomocí externích modulů",
+      "E": "DIMM slot (pro stolní počítače) nebo SO-DIMM slot (pro notebooky)"
+    },
+    "correct": "E",
+    "explanation": "Operační paměti RAM mají tvar podlouhlých destiček, které se zasouvají právě do tzv. DIMM (nebo menších SO-DIMM u ntb) slotů."
+  },
+  {
+    "id": 41,
+    "topic": "NAS",
+    "difficulty": "medium",
+    "question": "Která z následujících služeb nepatří mezi běžně podporované služby zařízení NAS?",
+    "answers": {
+      "A": "Provoz virtualizační platformy pro spouštění plnohodnotných virtuálních serverů na úrovni hypervizoru typu bare-metal",
+      "B": "Poskytování sdíleného úložiště souborů v síti (file server)",
+      "C": "Zálohování dat z více zařízení v síti",
+      "D": "Streamování multimediálního obsahu (např. DLNA server)",
+      "E": "Vzdálený přístup k souborům přes webové rozhraní nebo mobilní aplikaci"
+    },
+    "correct": "A",
+    "explanation": "NAS (Network Attached Storage) je 'chytrý externí disk na síti' s úsporným procesorem. Neprobíhá na něm plnohodnotná virtualizace těžkých operačních systémů (bare-metal hypervisor)."
+  },
+  {
+    "id": 42,
+    "topic": "NETWORK",
+    "difficulty": "medium",
+    "question": "Jaký je hlavní rozdíl mezi kabelem UTP a STP?",
+    "answers": {
+      "A": "UTP kabel obsahuje optická vlákna pro přenos světelných signálů, zatímco STP kabel využívá pouze měděné vodiče a je proto pomalejší",
+      "B": "STP kabel má stínění proti elektromagnetickému rušení, zatímco UTP kabel jej nemá",
+      "C": "STP kabel je určen výhradně pro bezdrátovou komunikaci mezi zařízeními, zatímco UTP kabel vyžaduje fyzické propojení konektory",
+      "D": "UTP kabel se používá pouze pro telefonní linky a nelze jej využít v počítačových sítích, zatímco STP kabel je standardem pro Ethernet",
+      "E": "STP kabel neumožňuje přenos dat na dlouhé vzdálenosti a používá se pouze uvnitř zařízení, zatímco UTP kabel je určen pro venkovní rozvody"
+    },
+    "correct": "B",
+    "explanation": "UTP (Unshielded) je nestíněná běžná kroucená dvojlinka. STP (Shielded) má uvnitř kovovou folii chránící data před elektromagnetickým šumem např. v továrnách."
+  },
+  {
+    "id": 43,
+    "topic": "BOOL",
+    "difficulty": "medium",
+    "question": "K čemu slouží logická hradla v digitální elektronice?",
+    "answers": {
+      "A": "Slouží jako paměťové jednotky, které dlouhodobě uchovávají velké objemy dat i po vypnutí napájení a nahrazují pevné disky v počítačích",
+      "B": "Zajišťují fyzické propojení jednotlivých komponent počítače a fungují jako kabeláž pro přenos elektrického proudu mezi zařízeními",
+      "C": "Provádějí základní logické operace (např. AND, OR, NOT) nad binárními vstupy",
+      "D": "Převádějí analogový signál na digitální a zpět, přičemž se používají především ve zvukových kartách a měřicích přístrojích",
+      "E": "Slouží k řízení napájení procesoru tím, že regulují napětí a proud podle aktuální zátěže systému a zabraňují jeho přehřátí"
+    },
+    "correct": "C",
+    "explanation": "Logická hradla jsou tvořena tranzistory a jsou základními stavebními kameny všech digitálních obvodů (vykonávají logiku booleanovy algebry)."
+  },
+  {
+    "id": 44,
+    "topic": "BOOL",
+    "difficulty": "medium",
+    "question": "Co je NAND hradlo?",
+    "answers": {
+      "A": "Hradlo, které provádí pouze operaci sčítání binárních čísel a používá se výhradně v aritmeticko-logické jednotce procesoru pro numerické výpočty",
+      "B": "Hradlo, které funguje jako paměťová buňka schopná dlouhodobě uchovávat informace i bez napájení a používá se jako základ pro konstrukci SSD disků",
+      "C": "Hradlo, které převádí analogový signál na digitální a slouží především ve zvukových a měřicích zařízeních pro zpracování signálů",
+      "D": "Hradlo, které předává na výstupu logickou 0 pouze tehdy, když jsou všechny vstupy v logické 1, jinak předává 1",
+      "E": "Hradlo, které umožňuje pouze jednosměrný tok elektrického proudu podobně jako dioda a používá se k ochraně obvodů před přepětím"
+    },
+    "correct": "D",
+    "explanation": "NAND = NOT AND. Opak hradla AND. Běžně dává na výstup jedničku, zhasne (dá nulu) jen ve chvíli, kdy jsou OBA jeho vstupy jedničkové."
+  },
+  {
+    "id": 45,
+    "topic": "BOOL",
+    "difficulty": "medium",
+    "question": "Co je výstupem logického výrazu (A AND B) OR (NOT C), pokud jsou hodnoty vstupů A=1, B=1, C=0?",
+    "answers": {
+      "A": "Nelze určit, protože logické operace AND a OR nelze kombinovat v jednom výrazu bez použití závorek a priorit operátorů",
+      "B": "Součet hodnot",
+      "C": "NAND",
+      "D": "1, ale pouze v případě, že jsou všechny vstupy stejné hodnoty, což zde není splněno",
+      "E": "1"
+    },
+    "correct": "E",
+    "explanation": "(1 AND 1) je 1. (NOT 0) je 1. Poté 1 OR 1 vyjde na konečnou 1."
+  },
+  {
+    "id": 46,
+    "topic": "MEM",
+    "difficulty": "medium",
+    "question": "Jaká je binární reprezentace čísla 137?",
+    "answers": {
+      "A": "10001001",
+      "B": "10001101",
+      "C": "11001001",
+      "D": "10011001",
+      "E": "10101001"
+    },
+    "correct": "A",
+    "explanation": "128 + 0 + 0 + 0 + 8 + 0 + 0 + 1 = 137. Takže pozice (bity odpovídající hodnotám 128, 8, 1) musí být v jedničce."
+  },
+  {
+    "id": 47,
+    "topic": "MEM",
+    "difficulty": "medium",
+    "question": "Jaký je hexadecimální zápis čísla 255?",
+    "answers": {
+      "A": "FE",
+      "B": "FF",
+      "C": "F0",
+      "D": "0F",
+      "E": "EF"
+    },
+    "correct": "B",
+    "explanation": "V šestnáctkové (hex) soustavě má písmeno F hodnotu 15. Dvě F vedle sebe (FF) znamenají (15 * 16) + (15 * 1) = 240 + 15 = 255."
+  },
+  {
+    "id": 48,
+    "topic": "MEM",
+    "difficulty": "medium",
+    "question": "Jaká je desítková hodnota binárního čísla 10101?",
+    "answers": {
+      "A": "18",
+      "B": "12",
+      "C": "21",
+      "D": "23",
+      "E": "27"
+    },
+    "correct": "C",
+    "explanation": "Počítáno zprava do leva hodnotami mocnin 2: 1 + 0 + 4 + 0 + 16 = 21."
+  },
+  {
+    "id": 49,
+    "topic": "MB",
+    "difficulty": "medium",
+    "question": "Jaký je výsledek operace AND pro hodnoty 1 a 0?",
+    "answers": {
+      "A": "1",
+      "B": "-1",
+      "C": "2",
+      "D": "0",
+      "E": "není definováno"
+    },
+    "correct": "D",
+    "explanation": "Hradlo AND vyžaduje, aby na VŠECH vstupech byla jednička (pravda). Jelikož je jeden vstup nula, výstup bude 0."
+  },
+  {
+    "id": 50,
+    "topic": "RASPBERRY",
+    "difficulty": "medium",
+    "question": "Jaký je výsledek operace OR pro hodnoty 0 a 1?",
+    "answers": {
+      "A": "0",
+      "B": "2",
+      "C": "-1",
+      "D": "není definováno",
+      "E": "1"
+    },
+    "correct": "E",
+    "explanation": "Hradlu OR (NEBO) stačí pro výstupní jedničku, aby alespoň jeden z jeho vstupů byla jednička."
+  },
+  {
+    "id": 51,
+    "topic": "SIGNAL",
+    "difficulty": "medium",
+    "question": "Jaký je hlavní rozdíl mezi digitálním a analogovým signálem?",
+    "answers": {
+      "A": "Digitální signál má diskrétní hodnoty (např. 0 a 1), zatímco analogový signál je spojitý",
+      "B": "Digitální signál je vždy rychlejší než analogový a používá se výhradně v moderních zařízeních, zatímco analogový signál je zastaralý a již se nepoužívá",
+      "C": "Analogový signál přenáší pouze obrazové informace, zatímco digitální signál slouží výhradně pro přenos zvuku a nelze jej použít pro jiná data",
+      "D": "Digitální signál není náchylný k žádnému rušení ani ztrátám, zatímco analogový signál vždy obsahuje chyby a nelze jej spolehlivě použít v komunikaci",
+      "E": "Analogový signál je tvořen pouze dvěma hodnotami (0 a 1), zatímco digitální signál může nabývat nekonečně mnoha hodnot v určitém rozsahu"
+    },
+    "correct": "A",
+    "explanation": "Analogový signál si představ jako plynulou vlnu (jako hladina vody), zatímco digitální představuje skokové změny (schody, zpravidla jen on/off - 1 a 0)."
+  },
+  {
+    "id": 52,
+    "topic": "NETWORK",
+    "difficulty": "medium",
+    "question": "Jaká je hlavní funkce modulátoru/demodulátoru (modemu)?",
+    "answers": {
+      "A": "Slouží jako zařízení pro ukládání dat, které uchovává přenášené informace v paměti a umožňuje jejich pozdější zpracování bez nutnosti dalšího přenosu",
+      "B": "Převádí digitální signál na analogový a zpět pro přenos po komunikačním médiu",
+      "C": "Zajišťuje směrování paketů mezi různými sítěmi na základě IP adres a funguje jako centrální prvek pro řízení síťového provozu",
+      "D": "Funguje jako zesilovač signálu, který pouze zvyšuje jeho amplitudu bez jakékoli změny formy nebo způsobu kódování dat",
+      "E": "Převádí elektrický signál na optický a zpět, přičemž se používá výhradně v optických sítích pro komunikaci na velké vzdálenosti"
+    },
+    "correct": "B",
+    "explanation": "Počítače 'mluví' digitálně, starší kabely (např. telefonní linky) přenášejí vlny analogově. Modem to tlumočí tam a zpět."
+  },
+  {
+    "id": 53,
+    "topic": "MEDIUM",
+    "difficulty": "medium",
+    "question": "Co označuje zkratka SSHD?",
+    "answers": {
+      "A": "Speciální typ čistě polovodičového disku bez pohyblivých částí, který využívá výhradně paměťové čipy NAND a nemá žádné mechanické komponenty",
+      "B": "Síťové úložiště určené pro vzdálený přístup k datům přes internet, které kombinuje funkce serveru a cloudového řešení pro domácnosti",
+      "C": "Hybridní disk kombinující klasický HDD a menší SSD cache pro zrychlení přístupu k datům",
+      "D": "Typ operační paměti používaný v serverech, který kombinuje vlastnosti DRAM a cache paměti pro zvýšení výkonu při zpracování dat",
+      "E": "Externí úložné zařízení připojované přes USB, které slouží pouze pro zálohování dat a neumožňuje běh operačního systému"
+    },
+    "correct": "C",
+    "explanation": "Solid State Hybrid Drive je disk s klasickými točícími se plotnami (pro kapacitu), na který byla přilepena malá flash paměť z SSD pro rychlejší načítání např. OS."
+  },
+  {
+    "id": 54,
+    "topic": "MEDIUM",
+    "difficulty": "medium",
+    "question": "Co je technologie NFC?",
+    "answers": {
+      "A": "Technologie pro vysokorychlostní přenos dat na velké vzdálenosti, která se používá především v mobilních sítích jako náhrada za Wi-Fi a umožňuje připojení k internetu bez infrastruktury",
+      "B": "Kabelové rozhraní určené pro připojení periferních zařízení k počítači, které kombinuje přenos dat, obrazu i napájení v jednom konektoru",
+      "C": "Satelitní komunikační technologie používaná pro navigační systémy, která umožňuje přesné určování polohy zařízení kdekoliv na Zemi",
+      "D": "Bezdrátová technologie pro krátký dosah (řádově centimetry), používaná např. pro bezkontaktní platby a rychlé párování zařízení",
+      "E": "Technologie určená pro ukládání dat do paměťových čipů, která zajišťuje jejich dlouhodobou uchovatelnost bez potřeby napájení"
+    },
+    "correct": "D",
+    "explanation": "Near Field Communication se spouští pouze na pár centimetrů, nejčastěji ji známe z placení chytrým mobilem u terminálu v obchodě."
+  },
+  {
+    "id": 55,
+    "topic": "TECHNOLOGY",
+    "difficulty": "medium",
+    "question": "Která z následujících technologií nepatří mezi bezdrátové technologie pro krátký a střední dosah?",
+    "answers": {
+      "A": "Wi-Fi",
+      "B": "Bluetooth",
+      "C": "NFC",
+      "D": "Zigbee",
+      "E": "LTE"
+    },
+    "correct": "E",
+    "explanation": "LTE je technologie mobilních sítí (4G) a její antény pokrývají signálem kilometry (dlouhý dosah), ostatní vyjmenované fungují jen na pár metrů až centimetrů."
+  },
+  {
+    "id": 56,
+    "topic": "CPU",
+    "difficulty": "medium",
+    "question": "Co znamená pojem throttling v kontextu CPU?",
+    "answers": {
+      "A": "Dočasné snížení výkonu procesoru za účelem snížení teploty nebo spotřeby",
+      "B": "Zvýšení taktovací frekvence procesoru pro vyšší výkon",
+      "C": "Automatické přetaktování procesoru při vysoké zátěži",
+      "D": "Vypnutí procesoru při dosažení maximální teploty",
+      "E": "Optimalizace instrukční sady procesoru pro rychlejší výpočty"
+    },
+    "correct": "A",
+    "explanation": "Thermal throttling ('škrcení') je záchranná brzda. Když se procesor přehřívá, úmyslně se zpomalí (sníží napětí a frekvenci), aby neshořel."
+  },
+  {
+    "id": 57,
+    "topic": "FAN",
+    "difficulty": "medium",
+    "question": "Účinnost zdroje je vyjádřena v procentech a udává, jaká část příkonu je účelně převedena na výkon. Zbytek tvoří ztráty, které se bez užitku přemění na teplo. Vyber z následující nabídky tvrzení správnou odpověď:",
+    "answers": {
+      "A": "Účinnost je větší u modulárních zdrojů.",
+      "B": "Účinnost je menší u modulárních zdrojů.",
+      "C": "Účinnost je u běžných zdrojů 70 – 95 %.",
+      "D": "Účinnost je u běžných zdrojů 95 – 110 %.",
+      "E": "Účinnost zdroje závisí na použitém procesoru a základní desce."
+    },
+    "correct": "C",
+    "explanation": "Žádný zdroj nedokáže ze zdi poslat komponentám proud bez ztráty (nad 100% je to fyzikálně nemožné). Běžně se účinnost pohybuje kolem 80 Plus (nad 80 %)."
+  },
+  {
+    "id": 58,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Z následujících tvrzení vyber to, které nejvíce vystihuje pojem zahoření počítače:",
+    "answers": {
+      "A": "Stav, kdy se jedna nebo více součástí PC přehřívá a způsobuje tak situaci, kdy počítač přestane reagovat na pokyny uživatele.",
+      "B": "Výraz pro první spuštění počítače a otestování funkčnosti jeho částí a test jeho stability.",
+      "C": "Stav, kdy se nedostatečně chlazený CPU přehřeje natolik, že hrozí jeho poškození, v krajním případě může i vzplanout. ",
+      "D": "Výraz pro odpálení některé z komponent, vlivem statické elektřiny nebo neodbornou instalací/manipulací. ",
+      "E": "Výraz pro dokonalé přilnutí „zapečení“ termální pasty mezi chladičem a CPU, většinou se tak děje po prvním spuštění počítače. "
+    },
+    "correct": "B",
+    "explanation": "Tzv. burn-in test neznamená hoření plamenem, ale zátěžový test nových součástek. Obvykle běží dlouhé hodiny, aby se ověřilo, že nemá z výroby skrytou vadu."
+  },
+  {
+    "id": 59,
+    "topic": "GENEZE",
+    "difficulty": "medium",
+    "question": "U následujících možností vyber tu, kde jsou jednotlivé součástky, typické pro dané generace počítačů, seřazeny správně chronologicky (od nejstarší generace po nejmladší):",
+    "answers": {
+      "A": "elektronky, tranzistory, relé, integrované obvody, integrované obvody s vysokou hustotou",
+      "B": "elektronky, relé, integrované obvody, integrované obvody s vysokou hustotou, tranzistory",
+      "C": "tranzistory, relé, elektronky, integrované obvody, integrované obvody s vysokou hustotou",
+      "D": "relé, elektronky, tranzistory, integrované obvody, integrované obvody s vysokou hustotou",
+      "E": "elektronky, integrované obvody, integrované obvody s vysokou hustotou, relé, tranzistory"
+    },
+    "correct": "D",
+    "explanation": "Počítače vzešly z velkých a pomalých mechanických přepínačů (relé 0. gen), pak přišly elektronky (1. gen), polovodičové tranzistory (2. gen) a pak čipy/obvody (3. a 4. gen)."
+  },
+  {
+    "id": 60,
+    "topic": "GENEZE",
+    "difficulty": "medium",
+    "question": "U následujících možností vyber tu, kde jsou jednotlivé součástky, typické pro dané generace počítačů, seřazeny správně chronologicky (od nejstarší generace po nejmladší):",
+    "answers": {
+      "A": "elektronky, tranzistory, relé, integrované obvody, integrované obvody s vysokou hustotou",
+      "B": "elektronky, relé, integrované obvody, integrované obvody s vysokou hustotou, tranzistory",
+      "C": "tranzistory, relé, elektronky, integrované obvody, integrované obvody s vysokou hustotou",
+      "D": "relé, elektronky, tranzistory, integrované obvody, integrované obvody s vysokou hustotou",
+      "E": "elektronky, integrované obvody, integrované obvody s vysokou hustotou, relé, tranzistory"
+    },
+    "correct": "D",
+    "explanation": "Duplicitní otázka z tvého zadání, vývojová linie je relé -> elektronka -> tranzistor -> obvody."
+  },
+  {
+    "id": 61,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "K čemu slouží v CPU registry?",
+    "answers": {
+      "A": "K dlouhodobému ukládání dat na disk",
+      "B": "K řízení komunikace mezi zařízeními",
+      "C": "K rychlému ukládání malého množství dat v CPU",
+      "D": "K ukládání programů v paměti RAM",
+      "E": "K zálohování dat operačního systému"
+    },
+    "correct": "C",
+    "explanation": "Registry jsou vůbec ty nejrychlejší možné paměti na světě – nacházejí se přímo uvnitř samotného výpočetního jádra a drží přesná data zpracovávaná v daném taktu."
+  },
+  {
+    "id": 62,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co znamená u CPU vlastnost Boost?",
+    "answers": {
+      "A": "Trvalé snížení frekvence procesoru",
+      "B": "Dočasné zvýšení frekvence při zátěži",
+      "C": "Zvýšení kapacity operační paměti",
+      "D": "Snížení spotřeby energie CPU",
+      "E": "Režim pro virtualizaci systému"
+    },
+    "correct": "B",
+    "explanation": "Turbo Boost umožňuje procesoru automaticky zrychlit svůj takt (Hertzy) nad základní frekvenci, když narazí na těžký úkol a dovolují mu to teploty chladiče."
+  },
+  {
+    "id": 63,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co je Abacus?",
+    "answers": {
+      "A": "Moderní typ procesoru",
+      "B": "Mechanické počítadlo pro výpočty",
+      "C": "Program pro matematické výpočty",
+      "D": "Součást základní desky",
+      "E": "Paměťové zařízení počítače"
+    },
+    "correct": "B",
+    "explanation": "Abakus je starověké kuličkové počítadlo a je považováno za pradědečka kalkulaček a počítačů."
+  },
+  {
+    "id": 64,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co je bionický robot?",
+    "answers": {
+      "A": "Robot řízený pouze dálkově",
+      "B": "Robot bez senzorů a autonomie",
+      "C": "Robot napodobující biologické organismy",
+      "D": "Robot určený jen pro průmysl",
+      "E": "Robot bez pohyblivých částí"
+    },
+    "correct": "C",
+    "explanation": "Bionika spojuje biologii a techniku. Tyto stroje (nebo i protetické ruce) zkouší kopírovat zvířecí nebo lidský pohyb."
+  },
+  {
+    "id": 65,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co je autonomita robotů?",
+    "answers": {
+      "A": "Schopnost robota pracovat bez zásahu člověka",
+      "B": "Možnost dálkového ovládání robota",
+      "C": "Schopnost ukládat data na disk",
+      "D": "Použití robota v průmyslu",
+      "E": "Schopnost robota komunikovat po síti"
+    },
+    "correct": "A",
+    "explanation": "Když je vůz nebo robot 'autonomní', dokáže vyhodnocovat prostředí pomocí vlastních senzorů a jednat zcela sám, aniž by ho kdokoliv řídil s joystickem."
+  },
+  {
+    "id": 66,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "K čemu slouží proximity senzor?",
+    "answers": {
+      "A": "K měření teploty zařízení",
+      "B": "K detekci přiblížení objektu",
+      "C": "K ukládání dat do paměti",
+      "D": "K zesilování signálu",
+      "E": "K přenosu dat po síti"
+    },
+    "correct": "B",
+    "explanation": "Senzor přiblížení (proximity) máš například v mobilu u sluchátka. Jakmile přiložíš telefon k uchu, senzor zhasne obrazovku, ať omylem nemačkáš uchem po displeji."
+  },
+  {
+    "id": 67,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Jaké rozhraní běžně používají bezdrátové myši a klávesnice?",
+    "answers": {
+      "A": "HDMI",
+      "B": "USB-C kabel",
+      "C": "Ethernet",
+      "D": "Bluetooth",
+      "E": "SATA"
+    },
+    "correct": "D",
+    "explanation": "Většina bezdrátových periférií dnes běží buď přes dedikovaný přijímač (který vysílá v pásmu 2.4 GHz) anebo stále častěji pomocí protokolu Bluetooth."
+  },
+  {
+    "id": 68,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co je kvantový počítač?",
+    "answers": {
+      "A": "Počítač používající klasické bity",
+      "B": "Počítač bez operační paměti",
+      "C": "Počítač využívající kvantové jevy pro výpočty",
+      "D": "Počítač určený jen pro hry",
+      "E": "Počítač bez procesoru"
+    },
+    "correct": "C",
+    "explanation": "Zatímco klasický počítač má bity, které jsou buď 0 NEBO 1, kvantový používá qubity, které díky jevům subatomární fyziky (superpozice) mohou být obojím zároveň."
+  },
+  {
+    "id": 69,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co mají společného Apple HomeKit a Amazon Alexa?",
+    "answers": {
+      "A": "Jsou to operační systémy počítačů",
+      "B": "Slouží pro správu databází",
+      "C": "Jsou to programovací jazyky",
+      "D": "Jsou to platformy pro chytrou domácnost",
+      "E": "Jsou to antivirové programy"
+    },
+    "correct": "D",
+    "explanation": "Obě se snaží vytvořit 'mozek domu', do kterého napojíš od žárovek, žaluzií až po topení a pak vše ovládáš přes telefon nebo hlasem."
+  },
+  {
+    "id": 70,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co je RAM?",
+    "answers": {
+      "A": "Operační paměť pro dočasné ukládání dat",
+      "B": "Paměť pouze pro čtení",
+      "C": "Paměť pro dlouhodobé ukládání souborů",
+      "D": "Externí paměťové zařízení",
+      "E": "Grafická paměť monitoru"
+    },
+    "correct": "A",
+    "explanation": "Random Access Memory slouží pro načtení zrovna zapnutých aplikací, aby na ně CPU nemusel čekat. Po vypnutí PC se vždy celá vymaže."
+  },
+  {
+    "id": 71,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co je ROM?",
+    "answers": {
+      "A": "Paměť pro ukládání běžících programů",
+      "B": "Paměť pouze pro čtení",
+      "C": "Paměť pro dočasná data",
+      "D": "Paměť pro grafické operace",
+      "E": "Paměť pro ukládání cache"
+    },
+    "correct": "B",
+    "explanation": "Paměť, ze které se dalo původně jen číst (Read Only). Uchovává trvalé informace od výrobce, jako je zaváděcí systém BIOS na základní desce."
+  },
+  {
+    "id": 72,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Na které z uvedených médií je prováděn záznam pomocí laserového paprsku?",
+    "answers": {
+      "A": "Pevný disk HDD",
+      "B": "USB flash disk",
+      "C": "Optický disk (např. CD nebo DVD)",
+      "D": "Operační paměť RAM",
+      "E": "Magnetická páska"
+    },
+    "correct": "C",
+    "explanation": "Do optických disků (CD, DVD, Blu-Ray) se informace laserem skutečně fyzicky 'vypalují' v podobě mikroskopických jamek odrážejících světlo."
+  },
+  {
+    "id": 73,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Co je v oblasti HW z hlediska uživatele terminál?",
+    "answers": {
+      "A": "Procesor počítače",
+      "B": "Paměťové zařízení",
+      "C": "I/O zařízení",
+      "D": "Grafická karta",
+      "E": "Zdroj napájení"
+    },
+    "correct": "C",
+    "explanation": "Terminál slouží ke vstupu dat (Input - např. klávesnice) a zobrazení výstupu (Output - např. monitor), ale nemá vlastní hlavní výpočetní výkon (bývá napojen na centrální server)."
+  },
+  {
+    "id": 74,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "Která z uvedených vlastností nemá vliv na výkon procesoru?",
+    "answers": {
+      "A": "Počet jader",
+      "B": "Frekvence procesoru",
+      "C": "Velikost cache paměti",
+      "D": "Barva základní desky",
+      "E": "Počet vláken"
+    },
+    "correct": "D",
+    "explanation": "Barva plošného spoje základní desky plní výhradně estetickou funkci a samotný HW výkon čipu se tím nijak nemění."
+  },
+  {
+    "id": 75,
+    "topic": "HW",
+    "difficulty": "medium",
+    "question": "V jakých jednotkách je udávána hlasitost reproduktorů?",
+    "answers": {
+      "A": "Watty",
+      "B": "Hertzy",
+      "C": "Volty",
+      "D": "Bity",
+      "E": "Decibely"
+    },
+    "correct": "E",
+    "explanation": "Hladina akustického tlaku (hlasitost vnímaná uchem) se měří v decibelech (dB). Watty udávají pouze elektrický příkon."
+  }
+]
